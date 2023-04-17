@@ -20,8 +20,8 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/KrishnaVishwakarma1595/product-preview-card)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/product-preview-card/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-using-css-grids-I0OpgXJneS)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/stats-preview-card-component/)
 
 ## My process
 
