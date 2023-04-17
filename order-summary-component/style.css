@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{ height: 100%; }
+
+:root{
+    /* PRIMARY COLORS */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /* NEUTRAL COLORS */
+    --neutral-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --white: #ffffff;
+    /* FONTS */
+    --ff-redhat-display: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background: var(--pale-blue) url(./images/pattern-background-desktop.svg) no-repeat left top;
+    background-size: 100% 50%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-redhat-display);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column { flex-direction: column; }
+
+.d-inline-block{ display: inline-block; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center{ align-items: center;}
+
+.attribution{
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;    
+}
+
+.order-summary-card{
+    width: 400px;
+    border-radius: 16px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 14px 10px hsla(241, 100%, 89%, 0.3);
+    -webkit-box-shadow: 0px 4px 14px 10px hsla(241, 100%, 89%, 0.3);
+    -moz-box-shadow: 0px 4px 14px 10px hsla(241, 100%, 89%, 0.3);
+    display: grid;
+    place-items: center;    
+    padding-bottom: 38px;
+}
+
+.hero-illustration{
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.hero-head-text{
+    margin-top: 40px;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.order-summary{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--desaturated-blue);
+    text-align: center;
+    margin: 15px auto;
+    width: 295px;
+    line-height: 1.5;
+    font-family: var(--ff-redhat-display);
+}
+
+.subscription{
+    width: 320px;
+    padding: 20px;
+    background-color: hsla(225, 100%, 94%, 0.32);
+    border-radius: 12px;
+}
+
+.subscription p:nth-child(1){
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 15px;
+    white-space: nowrap;
+    font-family: var(--ff-redhat-display);
+}
+
+.subscription p:nth-child(2){
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    font-size: 14px;
+    font-family: var(--ff-redhat-display);
+}
+
+.subscription button{
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    color: var(--bright-blue);
+    font-size: 12px;
+    font-weight: 800;    
+    font-family: var(--ff-redhat-display);
+}
+
+.subscription button:hover{
+    color: hsla(245, 75%, 52%, 0.7);
+    text-decoration: none;
+}
+
+.proceed-to-payment {
+    background-color: var(--bright-blue);
+    width: 320px;
+    height: 40px;
+    border: none;
+    color: var(--white);
+    border-radius: 10px;
+    margin: 25px 0;
+    font-weight: 700;
+    font-size: 13px;    
+    box-shadow: 0px 6px 20px 2px hsla(245, 75%, 52%, 0.3);
+    -webkit-box-shadow: 0px 6px 20px 2px hsla(245, 75%, 52%, 0.3);
+    -moz-box-shadow: 0px 6px 20px 2px hsla(245, 75%, 52%, 0.3);
+    font-family: var(--ff-redhat-display);
+}
+
+.proceed-to-payment:hover{
+    background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.cancel-order {
+    background-color: transparent;
+    border: none;
+    font-weight: 800;
+    font-size: 13px;    
+    color: var(--desaturated-blue);
+    font-family: var(--ff-redhat-display);
+}
+
+.cancel-order:hover{
+    color: var(--dark-blue);
+}
+
+@media only screen and (max-width: 601px) {    
+    body{
+        padding: 20px;
+        height: auto;
+        background: var(--pale-blue) url(./images/pattern-background-mobile.svg) no-repeat left top;
+        background-size: 100% 50%;
+    }      
+    .attribution{
+        position: relative;
+        bottom: unset;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .order-summary-card{ width: 320px; }
+    .order-summary{ width: 250px; }
+    .subscription,.proceed-to-payment{
+        width: 270px;
+    }
+}

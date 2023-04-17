@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root{
+    /* PRIMARY COLORS */
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    /* NEUTRAL COLORS */
+    --white: hsl(0, 0%, 100%);
+    --light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-blue: hsl(224, 21%, 14%);
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background-color: var(--light-grayish-blue);
+    display: grid;
+    place-items: center;
+    place-content: center;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-inline-block{ display: inline-block; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center{ align-items: center;}
+
+.attribution{
+    /* position: fixed; */
+    bottom: 10px;
+    text-align: center;
+    width: 100%;    
+    color: var(--dark-blue);
+    font-weight: 300;
+    padding: 20px 0;
+}
+
+.attribution a{
+    color: var(--blue);
+}
+
+.notification-card{
+    width: 700px;
+    display: grid;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: var(--white);
+    box-shadow: 0px 6px 20px 2px hsla(211, 68%, 94%, 0.3);
+    -webkit-box-shadow: 0px 6px 20px 2px hsla(211, 68%, 94%, 0.3);
+    -moz-box-shadow: 0px 6px 20px 2px hsla(211, 68%, 94%, 0.3);
+    row-gap: 20px;
+    padding-bottom: 10px;
+}
+
+.ntf-card-head-section{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ntf-card-head-section div{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.ntf-card-head-section h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.notification-count {
+    background-color: var(--blue);
+    width: 26px;
+    padding: 2px;
+    line-height: 1.5;
+    color: var(--white);
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mark-all-read{
+    color: var(--dark-grayish-blue);
+    background-color: transparent;
+    border: none;
+    font-weight: 600;    
+}
+
+.mark-all-read:hover{
+    color: hsla(219, 85%, 26%, 0.9)
+}
+
+.notification-list{
+    list-style: none;
+    display: grid;
+    row-gap: 8px;
+}
+
+.notification-list-item {    
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 20px;
+    align-items: flex-start;
+}
+
+.notification-list-item:nth-child(5) {
+    grid-template-columns: auto 1fr 40px;
+}
+
+.comment-picture{
+    border: 3px solid transparent;
+}
+
+.comment-picture:hover{
+    border: 3px solid var(--light-grayish-blue-1);
+    border-radius: 8px;
+}
+
+.notification-list-item-unread{
+    background-color: var(--light-grayish-blue);
+    cursor: pointer;
+}
+
+.notification-user-avatar{
+    width: 40px;    
+}
+
+.notification{
+    display: flex;
+    flex-direction: column;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    font-size: 15px;
+    row-gap: 4px;
+}
+
+.username {
+    color: black;
+    font-weight: 900;
+    margin-right: 2px;
+}
+
+.post {
+    font-weight: 900;
+    color: var(--dark-grayish-blue);
+}
+
+.post:hover, .group:hover, .username:hover{
+    color: var(--blue);
+}
+
+.notify-circle {
+    background-color: var(--red);
+    width: 8px;
+    display: inline-block;
+    height: 8px;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+
+/* .nofitication-message{ 
+    position: relative; 
+    align-self: flex-start;
+} */
+
+/* .notification-list-item-unread .nofitication-message:after{
+    content: '';
+    position: absolute;
+    right: -14px;
+    top: 6px;
+    background-color: var(--red);
+    width: 8px;
+    display: inline-block;
+    height: 8px;
+    border-radius: 50%;
+} */
+
+.notification-time {
+    font-size: 15px;
+    color: var(--grayish-blue);
+    font-weight: 500;
+}
+
+.group{
+    font-weight: 900;
+    color: var(--blue);
+}
+
+.private-message {
+    color: var(--dark-grayish-blue);
+    border: 1.5px solid var(--light-grayish-blue-2);
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.private-message:hover{
+    background-color: var(--light-grayish-blue-1);
+}
+
+@media only screen and (max-width: 700px) {
+    .notification-card{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 425px) {
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    .attribution{
+        position: relative;
+        bottom: unset;
+        margin-top: 20px;
+    }
+    .notification-card{
+        padding: 15px;
+        padding-top: 20px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <title>Frontend Mentor | Interactive rating component</title>
+        <link rel="stylesheet" href="./style.css">   
+    </head>
+
+    <body>
+        <main class="rating-card">
+            <!-- Rating state start -->
+            <div class="rating-start-state">
+                <div class="rating-star">
+                    <img src="./images/icon-star.svg" alt="Rating Star" />
+                </div>
+                <h1 class="rating-start-title">How did we do?</h1>
+                <p class="rating-start-desc">Please let us know how we did with your support request. All feedback is appreciated
+                to help us improve our offering!</p>
+                <ul class="ratings">
+                    <li class="rating-item" data-rating="1">1</li>
+                    <li class="rating-item" data-rating="2">2</li>
+                    <li class="rating-item" data-rating="3">3</li>
+                    <li class="rating-item" data-rating="4">4</li>
+                    <li class="rating-item" data-rating="5">5</li>
+                </ul>                
+                <button class="rating-submit">Submit</button>        
+            </div>
+            <!-- Rating state end -->
+
+            <!-- Thank you state start -->            
+            <div class="thank-you-state" >
+                <img src="./images/illustration-thank-you.svg" class="thanks-illustration" alt="Thank you illustration" />
+                <p class="user-rating-summary">
+                    You selected <span class="user-rating"></span> out of 5        
+                </p>
+                <h1 class="thank-you">Thank you!</h1>
+                <p class="thanks-text">We appreciate you taking the time to give a rating. If you ever need more support,
+                don’t hesitate to get in touch!</p>
+            </div>
+    
+            <!-- Thank you state end -->
+        </main>
+
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+
+</html>

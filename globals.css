@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --background: hsl(233, 47%, 7%);
+    --white: #FFFFFF;
+    /* FONTS */
+    --ff-roboto: 'Roboto Mono', monospace;
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background-color: var(--background); 
+    font-family: var(--ff-roboto);   
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.kv-logo{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 200px;
+}
+
+.coming-soon{
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+}
+
+hr{
+    width: 150px;
+    margin: 0 auto;
+    border-width: 1px;
+    border-style: solid;
+}
+
+#status{
+    font-size: 30px;    
+    text-align: center;
+    margin-top: 50px;
+}
+
+.footer{    
+    position: fixed;
+    bottom: 10px;    
+    left: 0;
+    text-align: center;
+    width: 100%;
+    color: var(--white);
+    font-weight: 300;
+}
+
+.footer a{
+    color: #f05843;
+}

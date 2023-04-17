@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+        <title>Frontend Mentor | Notifications page</title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+
+    <body>
+        <main class="notification-card">
+            <div class="ntf-card-head-section">
+                <div>
+                    <h1>Notifications</h1>
+                    <span class="notification-count">3</span>    
+                </div>
+                <button class="mark-all-read">Mark all as read</button>
+            </div>
+            <ul class="notification-list">
+                <li class="notification-list-item notification-list-item-unread">
+                    <img class="notification-user-avatar" src="./assets/images/avatar-mark-webber.webp" 
+                    alt="Notifiction from Mark Webber" />
+                    <p class="notification">
+                        <span class="nofitication-message">
+                            <span class="username">Mark Webber</span> reacted to your recent post <span class="post">My first tournament today!</span>
+                            <span class="notify-circle"></span>
+                        </span>
+                        <span class="notification-time">1m ago</span>
+                    </p>
+                </li>
+                <li class="notification-list-item notification-list-item-unread">
+                    <img src="./assets/images/avatar-angela-gray.webp" alt="Notification from Angela Gray"
+                    class="notification-user-avatar" />
+                    <p class="notification">
+                        <span class="nofitication-message">
+                            <span class="username">Angela Gray</span> followed you 
+                            <span class="notify-circle"></span>
+                        </span>
+                        <span class="notification-time">5m ago</span>
+                    </p>                    
+                </li>
+                <li class="notification-list-item notification-list-item-unread">
+                    <img src="./assets/images/avatar-jacob-thompson.webp" alt="Notification from Jacob Thompson"
+                    class="notification-user-avatar" />
+                    <p class="notification">
+                        <span class="nofitication-message">
+                            <span class="username">Jacob Thompson</span> has joined your group <span class="group">Chess Club</span>
+                            <span class="notify-circle"></span>
+                        </span>
+                        <span class="notification-time">1 day ago</span>
+                    </p>                                           
+                </li>
+                <li class="notification-list-item">
+                    <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt="Notification from Rizky Hasanuddin"
+                    class="notification-user-avatar" />
+                    <p class="notification">
+                        <span class="nofitication-message">
+                            <span class="username">Rizky Hasanuddin</span> sent you a private message
+                        </span>
+                        <span class="notification-time">5 days ago</span>
+                        <span class="private-message">
+                            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                            I'm already having lots of fun and improving my game.
+                        </span>
+                    </p>                                              
+                </li>
+                <li class="notification-list-item">
+                    <img src="./assets/images/avatar-kimberly-smith.webp" alt="Notification from Kimberly Smith"
+                    class="notification-user-avatar" />
+                    <p class="notification">
+                        <span class="nofitication-message">
+                            <span class="username">Kimberly Smith</span> commented on your picture
+                        </span>
+                        <span class="notification-time">5 days ago</span>                        
+                    </p>
+                    <img src="./assets/images/image-chess.webp" class="comment-picture" alt="Kimberly Smith commented on this picture" />
+                </li>
+                <li class="notification-list-item">
+                    <img src="./assets/images/avatar-nathan-peterson.webp" alt="Notification from Nathan Peterson"
+                    class="notification-user-avatar" />
+                    <p class="notification">
+                        <span class="nofitication-message">
+                            <span class="username">Nathan Peterson</span> reacted to your recent post 5 end-game strategies to increase your win rate                            
+                        </span>
+                        <span class="notification-time">2 weeks ago</span>
+                    </p>                                         
+                </li>
+                <li class="notification-list-item">
+                    <img src="./assets/images/avatar-anna-kim.webp" alt="Notification from Anna Kim"
+                    class="notification-user-avatar" />
+                    <p class="notification">
+                        <span class="nofitication-message">
+                            <span class="username">Anna Kim</span> left the group Chess Club
+                        </span>
+                        <span class="notification-time">2 weeks ago</span>
+                    </p>    
+                </li>
+            </ul>            
+        </main>
+
+        <footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.
+        </footer>
+        <script src="./index.js"></script>
+    </body>
+
+</html>
