@@ -20,8 +20,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-using-css-grids-I0OpgXJneS)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/stats-preview-card-component/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-and-animated-3-columns-preview-card-component-Ij6Rpiqg7A)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/3-column-preview-card-component/)
 
 ## My process
 
