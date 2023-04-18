@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root{
+    /* PRIMARY COLORS */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    /* NEUTRAL */
+    --white: hsl(0, 0%, 100%);    
+    --dark-gray: hsl(0, 0%, 59%);
+    /* FONTS */    
+    --ff-kumbh: 'Kumbh Sans', sans-serif;
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background-color: var(--dark-cyan);
+    font-family: var(--ff-kumbh);
+    display: grid;
+    place-content: center;
+    place-items: center;        
+    overflow: hidden;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-inline-block{ display: inline-block; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center{ align-items: center;}
+
+.attribution{    
+    position: fixed;
+    bottom: 10px;    
+    text-align: center;
+    width: 100%;
+    color: var(--white);
+    font-weight: 300;
+}
+
+.attribution a{
+    color: var(--very-dark-desaturated-blue);
+}
+
+@media only screen and (max-width: 768px) {    
+    .attribution{
+        position: relative;
+        bottom: unset;
+        left: unset;
+        margin-top: 40px;
+    }
+}
+
+body:before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(./images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: right 52vw bottom 36vh;
+}
+body:after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: left 50vw top 50vh;
+}
+
+.profile-card{
+    width: 350px;
+    border-radius: 12px;
+    z-index: 1;
+    background-color: var(--white);    
+}
+
+.profile-pattern{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.profile-images{
+    position: relative;
+    margin-bottom: 30px; 
+}
+
+.profile-avatar{
+    width: 100px;
+    border-radius: 50%;
+    border: 6px solid white;
+    position: absolute;
+    bottom: -50px;
+    left: 36%;
+    /* transform: translate(-55%, 1%); */
+}
+
+.profile-content{
+    display: grid;
+    place-content: center;
+    place-items: center;
+    grid-gap: 10px;
+    padding: 40px;
+    padding-bottom: 25px;
+    border-bottom: 0.5px solid hsl(0deg 0% 59% / 50%);
+}
+
+.person-name{
+    font-size: 20px;
+    font-family: var(--ff-kumbh);
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+}
+.person-age{
+    color: var(--dark-gray);
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+.place{
+    color: var(--dark-grayish-blue);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.social-stats {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+}
+
+.social-stats div{
+    display: grid;
+    row-gap: 6px;
+    place-content: center;
+    place-items: center;
+}
+
+.social-stats div span:first-child{
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--very-dark-desaturated-blue);
+}
+.social-stats div span:last-child{
+    font-size: 11px;
+    font-weight: 400;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 1.2px;
+}
+
+.bg-pattern-top {
+    position: absolute;
+    width: auto;
+    left: -18%;
+    top: -62%;
+}
+
+.bg-pattern-bottom{
+    position: absolute;
+    width: auto;
+}
+
+@media only screen and (max-width: 370px) {    
+    .profile-card{ width: 300px; }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 425px) {    
+    body::before{
+        background-position: right 50vw bottom 50vh;
+    }
+    body:after{
+        background-position: left 20vw top 50vh;
+    }
+}
