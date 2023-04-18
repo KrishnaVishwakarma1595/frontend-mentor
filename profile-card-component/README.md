@@ -20,8 +20,8 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-and-animated-3-columns-preview-card-component-Ij6Rpiqg7A)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/3-column-preview-card-component/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-and-animated-profile-card-component-jvGIe00t3g)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/profile-card-component/)
 
 ## My process
 
