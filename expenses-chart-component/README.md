@@ -20,8 +20,8 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-and-animated-3-columns-preview-card-component-Ij6Rpiqg7A)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/3-column-preview-card-component/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-and-animated-expenses-chart-component-using-chartjs-wj2TmkbdRv)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/expenses-chart-component/)
 
 ## My process
 
@@ -43,7 +43,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 - Mobile/Desktop first workflow
 - Animating elements
 - Importing JSON data
-- Visulizing JSON data using third-party library
+- Visualizing JSON data using a third-party library
 
 ## Author
 
