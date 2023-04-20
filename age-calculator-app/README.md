@@ -25,8 +25,8 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/KrishnaVishwakarma1595/interactive-card-details-form)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/interactive-card-details-form/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-age-calculator-app-using-css-grid-and-pure-javascript-PxzSc_DfG0)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/age-calculator-app/)
 
 ## My process
 
@@ -46,7 +46,7 @@ This is a solution to the [Age calculator app challenge on Frontend Mentor](http
 - Writing semantic HTML5 markup with HTML accessibility
 - HTML Forms and input fields
 - Form Error Handling 
-- Javascript interection with DOM
+- Javascript interaction with DOM
 - Working with Javascript dates
 
 ## Author
