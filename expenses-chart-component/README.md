@@ -17,6 +17,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 ### Screenshot
 
 ![](./screenshot.png)
+![](./screen-capture.mp4)
 
 ### Links
 
