@@ -24,8 +24,8 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-age-calculator-app-using-css-grid-and-pure-javascript-PxzSc_DfG0)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/age-calculator-app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-and-animated-base-apparel-coming-soon-page-sSM5g1JGR_)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/base-apparel-coming-soon/)
 
 ## My process
 
@@ -46,7 +46,6 @@ This is a solution to the [Base Apparel coming soon page challenge on Frontend M
 - HTML Forms and input fields
 - Form Error Handling 
 - Javascript interaction with DOM
-- Working with Javascript dates
 
 ## Author
 
