@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <title>Frontend Mentor | Base Apparel coming soon page</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main class="page-container">
+            <section class="left-section">
+                <div class="form-container">
+                    <img src="./images/logo.svg" alt="Base apparel form logo" class="logo animate__animated animate__zoomInDown" />
+                    <img src="./images/hero-mobile.jpg" alt="Beautiful girl" class="hero-mobile animate__animated animate__fadeIn animate__delay-1s">
+                    <div class="form-bottom-section">
+                        <h1 class="page-heading animate__animated animate__flipInX animate__delay-1s"><span>We're</span> coming soon</h1>
+                        <p class="page-content animate__animated animate__fadeInDown animate__delay-1s">
+                            Hello fellow shoppers! We're currently building our new fashion store. 
+                            Add your email below to stay up-to-date with announcements and our launch deals.
+                        </p>
+                        <form id="base-apparel-form" class="animate__animated animate__backInLeft animate__delay-2s">
+                            <div class="form-field">                                
+                                <input type="email" name="email" id="email" placeholder="Email Address">
+                                <button type="submit" class="submit-btn" aria-label="Enroll me">
+                                    <img src="./images/icon-arrow.svg" alt="" />
+                                </button>
+                                <img src="./images/icon-error.svg" class="error-icon" />
+                            </div>
+                            <span class="error-msg"></span>
+                            <span class="thanks-message animate__animated animate__fadeIn animate__delay-1s">Thanks for subscribing, we'll notify you once we launch the deals. Happy shopping!</span>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="right-section animate__animated animate__fadeInLeft">                
+                <img src="./images/hero-desktop.jpg"  alt="Beautiful girl">                
+            </section>
+        </main>
+        <footer class="attribution animate__animated animate__bounceInUp animate__delay-3s">            
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            Coded by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.
+        </footer>
+        <script src="index.js"></script>
+    </body>
+
+</html>
