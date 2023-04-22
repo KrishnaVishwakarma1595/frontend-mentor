@@ -55,6 +55,7 @@ img {
     color: var(--dark-grayish-red);
     font-weight: 300;
     font-size: 16px;
+    z-index: 1;
 }
 
 .attribution a{
