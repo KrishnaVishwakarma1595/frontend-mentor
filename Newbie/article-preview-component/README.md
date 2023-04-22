@@ -22,8 +22,8 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-and-animated-launch-countdown-timer-using-css-grids-guL3RYrVVN)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/launch-countdown-timer/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-article-preview-component-using-css-grid-and-javascript--We04VZid_)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/article-preview-component/)
 
 ## My process
 
