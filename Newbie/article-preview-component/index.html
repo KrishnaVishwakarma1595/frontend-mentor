@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- displays site properly based on user's device -->
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+        <title>Frontend Mentor | Article preview component</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <main class="article-card-container">
+            <div class="article-image">
+                <img src="./images/drawers.jpg" alt="Drawers" class="drawers-image" />
+            </div>
+            <article class="article-container">
+                <h1 class="article-heading">
+                    Shift the overall look and feel by adding these wonderful
+                    touches to furniture in your home
+                </h1>
+                <h2 class="article-content">
+                    Ever been in a room and felt like something was missing? Perhaps
+                    it felt slightly bare and uninviting. I’ve got some simple tips
+                    to help you make any room feel complete.
+                </h2>
+                <div class="article-author">
+                    <img src="./images/avatar-michelle.jpg" alt="" class="article-author-avatar" />
+                    <div class="d-flex flex-column" style="row-gap: 6px;">
+                        <p class="article-author-name">Michelle Appleton</p>
+                        <p class="article-time">28 Jun 2020</p>
+                    </div>
+                    <button class="share-button">
+                        <!-- <img src="./images/icon-share.svg" alt="" /> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                            <path fill="#6E8098" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/>
+                        </svg>
+                        <div class="article-share-popup animate__animated">
+                            <span>Share</span>
+                            <a href="https://www.facebook.com/profile.php?id=100009643414293" target="_blank" aria-label="Connect on my Facebook Profile">
+                                <img src="./images/icon-facebook.svg" alt="" />
+                            </a>
+                            <a href="https://twitter.com/KrishnaVis6026" target="_blank" aria-label="Connect on my Twitter Profile">
+                                <img src="./images/icon-twitter.svg" alt="" />           
+                            </a>
+                            <a href="https://in.pinterest.com/krish151995/" target="_blank" aria-label="Connect on my Pinterest Profile">
+                                <img src="./images/icon-pinterest.svg" alt="" />
+                            </a>
+                        </div>
+                    </button>
+                </div>
+                <div class="article-share-popup-mobile animate__animated">
+                    <div class="d-flex" style="column-gap: 15px;">
+                        <span>Share</span>
+                        <a href="https://www.facebook.com/profile.php?id=100009643414293" target="_blank" aria-label="Connect on my Facebook Profile">
+                            <img src="./images/icon-facebook.svg" alt="" />
+                        </a>
+                        <a href="https://twitter.com/KrishnaVis6026" target="_blank" aria-label="Connect on my Twitter Profile">
+                            <img src="./images/icon-twitter.svg" alt="" />           
+                        </a>
+                        <a href="https://in.pinterest.com/krish151995/" target="_blank" aria-label="Connect on my Pinterest Profile">
+                            <img src="./images/icon-pinterest.svg" alt="" />
+                        </a>
+                    </div>
+                    <button class="close-mobile-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                            <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+                        </svg>                         
+                    </button>
+                </div>
+            </article>       
+        </main>
+
+        <footer class="attribution animate__animated animate__bounceInUp animate__delay-1s">            
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            Coded by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.
+        </footer>
+
+        <script>
+
+            const shareButton = document.querySelector('.share-button');
+            const shareLinks = document.querySelectorAll('.share-button a');
+            const popupElem = document.querySelector('.article-share-popup');
+            const mobilePopupElem = document.querySelector('.article-share-popup-mobile');                
+            const closeButtonMobile = document.querySelector('.close-mobile-btn');
+
+            const mediaQuery = window.matchMedia('(max-width: 768px)')
+
+            shareButton.addEventListener('click', (e) => {
+                // Check if the media query is true
+                if (mediaQuery.matches) {
+                    console.log('mateches')
+                    const displayType = mobilePopupElem.style.display;
+                    mobilePopupElem.style.display = 'grid';        
+                    mobilePopupElem.classList.remove('animate__slideOutDown')            
+                    mobilePopupElem.classList.add('animate__slideInUp') 
+                }else{
+                    const displayType = popupElem.style.display;
+                    if(displayType === 'grid'){                        
+                        popupElem.classList.remove('animate__fadeIn')        
+                        popupElem.classList.add('animate__fadeOut')
+                        setTimeout(() => popupElem.style.display = 'none', 500);
+                    }else{
+                        popupElem.style.display = 'grid';        
+                        popupElem.classList.remove('animate__fadeOut')            
+                        popupElem.classList.add('animate__fadeIn')        
+                    }
+                }
+            })
+
+            closeButtonMobile.addEventListener('click', (e) => {
+                mobilePopupElem.classList.remove('animate__slideInUp')
+                mobilePopupElem.classList.add('animate__slideOutDown')
+                setTimeout(() => mobilePopupElem.style.display = 'none', 500);
+            })
+            
+            shareLinks.forEach((link) => {
+                link.addEventListener('click', (e) => {
+                    e.stopPropagation()
+                    document.querySelector('.article-share-popup').style.display = 'none';
+                })
+            })
+
+        </script>
+
+    </body>
+
+</html>
