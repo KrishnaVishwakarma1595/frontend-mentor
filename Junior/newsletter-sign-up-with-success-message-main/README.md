@@ -25,8 +25,8 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Solution URL: [Solution URL](https://github.com/KrishnaVishwakarma1595/interactive-card-details-form)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/interactive-card-details-form/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-newsletter-signup-with-success-message-8G-kTL0510)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/newsletter-sign-up-with-success-message-main/)
 
 ## My process
 
