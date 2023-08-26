@@ -160,5 +160,14 @@
         "screenshot": "./Newbie/article-preview-component/screenshots/screenshot-initial-state.png",
         "challenge_from": "https://www.frontendmentor.io",
         "solution_url": "https://www.frontendmentor.io/solutions/responsive-article-preview-component-using-css-grid-and-javascript--We04VZid_"
+    },
+    {
+        "id": 19,
+        "challenge_name": "Newsletter Signup With Success Message",
+        "challenge_type": "junior",
+        "built_with": ["html", "css", "js"],
+        "screenshot": "./Junior/newsletter-sign-up-with-success-message-main/screenshot-default.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-newsletter-signup-with-success-message-8G-kTL0510"
     }
 ]
