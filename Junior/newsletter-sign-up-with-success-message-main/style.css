@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    /* PRIMARY COLORS */
+    --tomato: hsl(4, 100%, 67%);
+    /* NEUTRAL */
+    --white: hsl(0, 0%, 100%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background-color: var(--charcoal-grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-inline-block{ display: inline-block; }
+.d-none { display: none; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center{ align-items: center;}
+
+.attribution{    
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    text-align: center;
+    width: auto;
+    color: var(--white);
+    font-weight: 300;
+    transform: translate(-50%, -50%);
+}
+
+.attribution a{
+    color: var(--tomato);
+}
+
+@media only screen and (max-width: 992px) {        
+    .attribution{
+        left: 40%;
+    }    
+}
+
+@media only screen and (max-width: 768px) {    
+   
+    .attribution{
+        position: relative;
+        bottom: unset;
+        left: unset;
+        margin: 40px auto;
+        transform: unset;
+    }
+    
+}
+
+#newsletter-main-container{
+    background-color: var(--white);
+    border-radius: 30px;
+    width: 800px;
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    column-gap: 50px;
+}
+
+#newsletter-main-container.with-thanks-state{
+    width: auto;
+}
+
+.newsletter-sign-up-form-container{
+    align-self: center;
+}
+
+.newsletter-sign-up-form-container h1, .newsletter-thanks-state h1{
+    color: var(--dark-slate-grey);
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.newsletter-thanks-state h1{
+    line-height: 1;
+    margin-top: 30px;
+}
+
+.newsletter-sign-up-form-container p, .newsletter-sign-up-form-container ul li,
+.newsletter-thanks-state p{
+    font-size: 14px;
+    color: var(--charcoal-grey);
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.newsletter-thanks-state p{
+    margin-bottom: 30px;
+}
+
+.user-email{
+    font-size: 14px;
+    color: var(--charcoal-grey);
+    font-weight: 700;
+}
+
+.newsletter-sign-up-form-container p{ margin-bottom: 15px;}
+
+.newsletter-sign-up-form-container ul{
+    padding: 0;
+    list-style: none;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+form label{
+    color: var(--dark-slate-grey);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+#newsletter-signup-email{
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid var(--grey);
+    margin-bottom: 18px;
+    color: var(--charcoal-grey);
+}
+
+#newsletter-signup-email:focus{
+    border-color: var(--charcoal-grey);
+}
+
+#newsletter-signup-email::placeholder{
+    color: var(--grey);
+}
+
+.newsletter-form-button, .newsletter-dismiss-message{
+    width: 100%;
+    background: var(--dark-slate-grey);
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 6px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.newsletter-form-button:hover,.newsletter-dismiss-message:hover{
+    background: var(--tomato);
+}
+
+.error-state-message{
+    color: var(--tomato);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.error-state{
+    border-color: var(--tomato) !important;
+    background-color: hsl(4deg 100% 67% / 28%);
+    color: var(--tomato) !important;
+}
+
+.newsletter-thanks-state{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px 20px 0;
+    align-items: flex-start;
+    width: 350px;
+}
+
+@media only screen and (max-width: 767px) {    
+    body{
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: var(--white);
+    }
+    #newsletter-main-container{
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+    .newsletter-form-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .newsletter-sign-up-form-container{
+        order: 2;
+        padding: 40px 20px;
+    }
+    .attribution{
+        color: var(--dark-slate-grey);
+    }
+    #newsletter-main-container.with-thanks-state{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 425px) {    
+    .newsletter-thanks-state{
+        margin-top: 150px;
+        width: 100%;
+        padding: 20px;
+    }
+    .newsletter-dismiss-message{
+        margin-top: 120px;
+    }
+}

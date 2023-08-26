@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "challenge_name": "QR code component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css"],
+        "screenshot": "./Newbie/qr-code-component/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-qr-code-component-ZHvOhM9zwL"
+    },
+    {
+        "id": 2,
+        "challenge_name": "Product Preview Card Component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css"],
+        "screenshot": "./Newbie/product-preview-card-component/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-product-preview-card-component-aOFdms_TIn"
+    },
+    {
+        "id": 3,
+        "challenge_name": "Result Summary Card Component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css"],
+        "screenshot": "./Newbie/results-summary-component/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-result-summary-card-component-oeu93qQLjg"
+    },
+    {
+        "id": 4,
+        "challenge_name": "Order Summary Card Component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css"],
+        "screenshot": "./Newbie/order-summary-component/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-order-summary-component-j3G7IsXdFW"
+    },
+    {
+        "id": 5,
+        "challenge_name": "NFT Preview Card Component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css"],
+        "screenshot": "./Newbie/nft-preview-card-component/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-nft-preview-card-component-Y3O1coKMQo"
+    },
+    {
+        "id": 6,
+        "challenge_name": "Interactive Rating Component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css", "js"],
+        "screenshot": "./Newbie/interactive-rating-component/screenshot-1.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-interactive-rating-component-yAQ7T6QDSR"
+    },
+    {
+        "id": 7,
+        "challenge_name": "Notification Page",
+        "challenge_type": "junior",
+        "built_with": ["html", "css", "js"],
+        "screenshot": "./Junior/notifications-page/screenshot-1.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-and-interactive-notification-page-using-css-grid-and-flexbox-18wEzURMZo"
+    },
+    {
+        "id": 8,
+        "challenge_name": "Interactive Card Details Form",
+        "challenge_type": "junior",
+        "built_with": ["html", "css", "js"],
+        "screenshot": "./Junior/interactive-card-details-form/screenshot-initial-state.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-and-interactive-card-details-form-using-css-grid-and-flexbox-Bd6JZ40mYY"
+    },    
+    {
+        "id": 9,
+        "challenge_name": "404 Not Found page",
+        "challenge_type": "responsive path",
+        "built_with": ["html", "css"],
+        "screenshot": "./Junior/interactive-card-details-form/screenshot-initial-state.png",
+        "challenge_from": "https://devchallenges.io/",
+        "solution_url": "https://devchallenges.io/solutions/KofWOr74faQRB9Z3mxwo"
+    },
+    {
+        "id": 10,
+        "challenge_name": "Team Page",
+        "challenge_type": "responsive path",
+        "built_with": ["html", "css"],
+        "screenshot": "./Junior/interactive-card-details-form/screenshot-initial-state.png",
+        "challenge_from": "https://devchallenges.io/",
+        "solution_url": "https://devchallenges.io/solutions/jGyLP8x6YU8GGQ8EaBgb"
+    },
+    {
+        "id": 11,
+        "challenge_name": "Stats Preview Card Component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css"],
+        "screenshot": "./Newbie/stats-preview-card-component/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-stats-preview-card-component-using-css-grids-I0OpgXJneS"
+    },
+    {
+        "id": 12,
+        "challenge_name": "3 Columns Preview Card Component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css"],
+        "screenshot": "./Newbie/3-column-preview-card-component/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-and-animated-3-columns-preview-card-component-Ij6Rpiqg7A"
+    },
+    {
+        "id": 13,
+        "challenge_name": "Profile Card Component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css"],
+        "screenshot": "./Newbie/profile-card-component/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-and-animated-profile-card-component-jvGIe00t3g"
+    },
+    {
+        "id": 14,
+        "challenge_name": "Launch Countdown Timer",
+        "challenge_type": "intermediate",
+        "built_with": ["html", "css", "js"],
+        "screenshot": "./Intermediate/launch-countdown-timer/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-and-animated-launch-countdown-timer-using-css-grids-guL3RYrVVN"
+    },
+    {
+        "id": 15,
+        "challenge_name": "Expenses Chart Component",
+        "challenge_type": "junior",
+        "built_with": ["html", "css", "js", "chart.js"],
+        "screenshot": "./Junior/expenses-chart-component/screenshot.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-and-animated-expenses-chart-component-using-chartjs-wj2TmkbdRv"
+    },
+    {
+        "id": 16,
+        "challenge_name": "Age  Calculator App",
+        "challenge_type": "junior",
+        "built_with": ["html", "css", "js"],
+        "screenshot": "./Junior/age-calculator-app/screenshots/screenshot-intial-empty.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-age-calculator-app-using-css-grid-and-pure-javascript-PxzSc_DfG0"
+    },
+    {
+        "id": 17,
+        "challenge_name": "Base Apparel Coming Soon Page",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css", "js"],
+        "screenshot": "./Newbie/base-apparel-coming-soon/screenshots/screenshot-initial-state.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-and-animated-base-apparel-coming-soon-page-sSM5g1JGR_"
+    },
+    {
+        "id": 18,
+        "challenge_name": "Article Preview Component",
+        "challenge_type": "newbie",
+        "built_with": ["html", "css", "js"],
+        "screenshot": "./Newbie/article-preview-component/screenshots/screenshot-initial-state.png",
+        "challenge_from": "https://www.frontendmentor.io",
+        "solution_url": "https://www.frontendmentor.io/solutions/responsive-article-preview-component-using-css-grid-and-javascript--We04VZid_"
+    }
+]

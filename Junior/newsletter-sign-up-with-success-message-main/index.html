@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<title>Frontend Mentor | Newsletter sign-up form with success message</title>
+		<link rel="stylesheet" href="./style.css">
+	</head>
+
+	<body>
+		<main id="newsletter-main-container">
+			<div class="d-flex newsletter-form-container" style="column-gap: 50px;">
+				<div class="newsletter-sign-up-form-container">
+					<!-- Sign-up form start -->
+			
+					<h1>Stay updated!</h1>
+			
+					<p>Join 60,000+ product managers receiving monthly updates on:</p>
+			
+					<ul>
+						<li class="d-flex align-items-center" style="column-gap: 12px;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+								<g fill="none">
+									<circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+									<path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
+								</g>
+							</svg>
+							<span>
+								Product discovery and building what matters
+							</span>
+						</li>
+						<li class="d-flex align-items-center" style="column-gap: 12px;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+								<g fill="none">
+									<circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+									<path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
+								</g>
+							</svg>
+							<span>
+								Measuring to ensure updates are a success
+							</span>
+						</li>
+						<li class="d-flex align-items-center" style="column-gap: 12px;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+								<g fill="none">
+									<circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/>
+									<path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/>
+								</g>
+							</svg>
+							<span>
+								And much more!
+							</span>
+						</li>
+					</ul>
+					
+					<form id="newsletter-form">
+						<div class="d-flex flex-column">
+							<div class="d-flex justify-content-between align-items-center">
+								<label for="newsletter-signup-email">Email address</label>
+								<span class="error-state-message"></span>
+							</div>
+							<input type="email" id="newsletter-signup-email" name="email" placeholder="email@company.com" />
+						</div>
+						<button type="submit" class="newsletter-form-button">Subscribe to monthly newsletter</button>
+					</form>
+					
+					<!-- Sign-up form end -->
+				</div>
+				<div class="newsletter-card-bg">
+					<picture class="product-view flex">
+						<source media="(min-width: 768px)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+						<img src="./assets/images/illustration-sign-up-mobile.svg" 
+						alt="Right section with orange background illustration">
+					</picture>
+				</div>
+			</div>
+	
+			<!-- Success message start -->
+			<div class="newsletter-thanks-state" style="display: none;">
+				<picture class="product-view flex">
+                    <source srcset="./assets/images/icon-success.svg">
+                    <img src="./assets/images/icon-success.svg" 
+                    alt="icon success" width="40" height="40">
+                </picture>
+
+				<h1>Thanks for subscribing!</h1>
+				
+				<p>
+					A confirmation email has been sent to <span class="user-email">ash@loremcompany.com</span>.
+					Please open it and click the button inside to confirm your subscription.
+				</p>
+		
+				<button class="newsletter-dismiss-message">
+					Dismiss message
+				</button>
+			</div>
+	
+			<!-- Success message end -->
+		</main>
+
+		<footer class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.
+        </footer>
+		<script src="./index.js"></script>
+	</body>
+
+</html>
