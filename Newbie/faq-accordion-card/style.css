@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root{
+    /* PRIMARY COLORS */
+    /* TEXTS */
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+    /* NEUTRAL TEXTS */
+    --white: hsl(330,100%,100%);
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+    /* BG GRADIENTS */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+    /* FONTS */    
+    --ff-kumbh-sans: 'Kumbh Sans', sans-serif;
+    --dividers: hsl(240, 5%, 91%);
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background: linear-gradient(180deg, var(--soft-violet), var(--soft-blue));
+    background-repeat: no-repeat;
+    font-family: var(--ff-kumbh-sans);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;         
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-inline-block{ display: inline-block; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center{ align-items: center;}
+
+.attribution{    
+    position: fixed;
+    bottom: 10px;    
+    text-align: center;
+    width: 100%;
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 300;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.attribution a{
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 500;
+}
+
+details{
+    padding: 18px 12px 18px 0px;
+}
+
+details>summary {
+    list-style: none;
+    position: relative;
+    font-size: 16px;
+    color: var(--dark-grayish-blue);
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+details>summary:hover{
+    color: var(--soft-red);
+}
+
+details[open]>summary {
+    color: var(--very-dark-desaturated-blue);
+    font-weight: 700;
+    transition: all 0.3s linear;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details>p{
+    margin-top: 15px;
+    font-size: 15px;
+    color: var(--dark-grayish-blue);
+    font-weight: 400;
+}
+
+summary::after {
+    content: "";
+    background-image: url(./images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: right;
+    right: 0;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 5px;
+}
+
+details[open] summary:after {
+    content: "";
+    background-image: url(./images/icon-arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: 12px;
+    background-position: right;
+    transform: rotate(180deg);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 12px;
+    height: 12px;
+}
+
+#faq-accordion-main-container{
+    background-color: var(--white);
+    border-radius: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* column-gap: 50px; */
+    width: 1000px;
+    height: 500px;
+    padding: 40px 40px 40px 0px;
+    padding-right: 100px;
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.faq-container{
+    width: 400px;
+}
+
+.faq-container h1{
+    font-size: 38px;
+    font-weight: 700;
+}
+
+.faq-container ul{
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+.faq-container ul li::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--dividers);
+}
+
+.illustration-container {
+    flex: 1;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.illustration-img-1 {
+    object-fit: contain;
+    position: absolute;
+    top: 65%;
+    left: -94%;
+    transform: translate(-10%, -66%);
+    width: auto;
+}
+
+.illustration-img-2{
+    position: absolute;
+    left: -75px;
+    top: 50%;
+    transform: translate(-0%, -50%);
+    width: auto;
+}
+
+.illustration-img-3 {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: -72px;
+    transform: translate(-11%, -25%);
+}
+
+@media only screen and (max-width: 1024px) {
+    #faq-accordion-main-container{
+        width: auto;
+        height: auto;
+        padding: 40px;
+        margin-top: 50px;
+    }
+    .faq-accordion-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .faq-container {
+        width: 500px;
+        margin: 0 auto;
+        margin-top: 250px;
+    }
+    .illustration-container{
+        overflow: visible;
+    }
+    .illustration-img-1{
+        object-fit: contain;
+        position: absolute;
+        top: 66%;
+        left: 0;
+        transform: translate(1%, -50%);
+        width: 95%;
+    }
+    .illustration-img-2 {
+        position: absolute;
+        left: unset;
+        top: unset;
+        transform: translate(2%, -50%);
+        width: auto;
+    }
+    .illustration-img-3 {
+        position: absolute;
+        width: auto;
+        top: 6%;
+        left: 0;
+        transform: translate(18%, -25%);
+    }
+    .faq-container h1{ text-align: center;}
+}
+
+@media only screen and (max-width: 767px) {
+    .faq-container{
+        margin-top: 130px;
+    }
+    .illustration-img-1{
+        transform: translate(15%, -30%);
+        width: 380px;
+    }
+    .illustration-img-2{
+        transform: translate(15%, -72%);
+        width: 380px;
+    }
+    .illustration-img-3{ display: none; }
+}
+
+@media only screen and (max-width: 600px) {
+    #faq-accordion-main-container{
+        padding: 20px;    
+        padding-bottom: 50px;
+        margin-top: 150px;
+    }
+    .illustration-container{
+        width: 320px;
+        height: auto;
+    }
+    .illustration-img-1 {
+        transform: translate(7%, -30%);
+        width: 280px;
+    }
+    .illustration-img-2 {
+        transform: translate(7%, -69%);
+        width: 280px;
+    }
+    .faq-container{
+        width: 320px;
+    }
+    details>summary{
+        font-size: 15px;
+    }
+    .attribution{
+        position: relative;
+        margin-top: 35px;
+    }
+}
