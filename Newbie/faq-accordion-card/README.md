@@ -22,8 +22,8 @@ This is a solution to the [FAQ accordion card challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-newsletter-signup-with-success-message-8G-kTL0510)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/newsletter-sign-up-with-success-message-main/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-faq-accordion-card-pGZLp4uYti)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/faq-accordion-card/)
 
 ## My process
 
