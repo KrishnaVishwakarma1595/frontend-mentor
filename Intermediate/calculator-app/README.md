@@ -22,8 +22,8 @@ This is a solution to the [Calculator app challenge on Frontend Mentor](https://
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-and-animated-launch-countdown-timer-using-css-grids-guL3RYrVVN)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/launch-countdown-timer/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-theme-based-calculator-app-using-javascript-oops-concept-HoP-1VdQjX)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/calculator-app/)
 
 ## My process
 
