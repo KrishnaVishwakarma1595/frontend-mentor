@@ -22,8 +22,8 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-theme-based-calculator-app-using-javascript-oops-concept-HoP-1VdQjX)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/calculator-app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-advice-generator-app-using-fetch-api-and-oop-concepts-of-js-DUOMf2oKNS)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/advice-generator-app/)
 
 ## My process
 
