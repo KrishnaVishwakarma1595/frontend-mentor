@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<title>Frontend Mentor | Advice generator app</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank" 
+		style="position: absolute;width: 140px;left: 20px;top: 10px;">
+			<img src="../../assets/logo-color-white.png" />
+		</a>
+		<main id="advice__main">
+			<h1 class="animate__animated animate__fadeIn">Advice #<span class="advice__id"></span></h1>
+			<p class="advice__container animate__animated animate__fadeIn"></p>
+			<picture>
+				<source media="(min-width: 768px)" srcset="./images/pattern-divider-desktop.svg">
+				<img class="divider animate__animated animate__fadeIn" src="./images/pattern-divider-mobile.svg" 
+				alt="Divider">
+			</picture>
+			<button class="dice">
+				<img src="./images/icon-dice.svg" class="rolling_dice animate__animated animate__wobble" />
+			</button>
+		</main>
+
+		<footer class="attribution animate__animated animate__fadeIn animate__delay-1s">            
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            Coded by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.			
+        </footer>
+		<script src="./index.js"></script>
+	</body>
+
+</html>
