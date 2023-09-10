@@ -16,13 +16,14 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 
 ### Screenshot
 
-![](./desktop-preview.png)
-![](./active-states.png)
-![](./mobile-preview.png)
+![](./screenshot-default-view.png)
+![](./screenshot-default-dropdown-view.png)
+![](./mobile.png)
+![](./mobile-navmenu.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-advice-generator-app-using-fetch-api-and-oop-concepts-of-js-DUOMf2oKNS)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-intro-section-with-dropdown-navigation-using-bootstrap-c7zpAg3H55)
 - Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/intro-section-with-dropdown-navigation/)
 
 ## My process

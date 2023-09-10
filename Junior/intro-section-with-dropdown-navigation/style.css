@@ -182,7 +182,7 @@ img {
 
 .nav_dropdown_menu.nav_dropdown_menu_company.show{
     width: 116px !important;
-    transform: translate(0%, 30px) !important;
+    transform: translate(0%, 46px) !important;
 }
 
 .intro__mobile_nav_icon, .intro__mobile_nav{ display: none; }
