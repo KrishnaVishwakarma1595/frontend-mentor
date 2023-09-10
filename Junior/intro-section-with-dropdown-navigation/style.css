@@ -55,6 +55,7 @@ img {
     column-gap: 125px;
     position: relative;
     overflow: hidden;
+    z-index: -1;
 }
 
 .intro__header_nav li, .intro__cta span, .intro__cta button,.intro__header_nav_dropdown button,
