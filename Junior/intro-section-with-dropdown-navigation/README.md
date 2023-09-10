@@ -23,7 +23,7 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
 ### Links
 
 - Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-advice-generator-app-using-fetch-api-and-oop-concepts-of-js-DUOMf2oKNS)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/advice-generator-app/)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/intro-section-with-dropdown-navigation/)
 
 ## My process
 
