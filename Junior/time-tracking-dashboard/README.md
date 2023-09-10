@@ -16,13 +16,13 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 
 ### Screenshot
 
-![](./screenshot.png)
-![](./screen-capture.mp4)
+![](./screenshot-default-view.png)
+![](./screenshot-mobile-view.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-and-animated-expenses-chart-component-using-chartjs-wj2TmkbdRv)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/expenses-chart-component/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-time-tracking-dashboard-using-js-oops-concept-and-json-load-x_9dTxwp-U)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/time-tracking-dashboard/)
 
 ## My process
 
@@ -44,6 +44,7 @@ This is a solution to the [Time tracking dashboard challenge on Frontend Mentor]
 - Mobile/Desktop first workflow
 - Animating elements
 - Importing JSON data
+- JS OOPS Concepts
 
 ## Author
 
