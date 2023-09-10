@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<title>Frontend Mentor | Time tracking dashboard</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header>
+			<a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+			style="position: absolute;width: 140px;left: 28px;top: 10px;" aria-label="Developer - Krishna Vishwakarma">
+				<img src="../../assets/logo-color-white.png" alt="Developer - Krishna Vishwakarma" />
+			</a>
+		</header>
+		<main id="time_tracking__main">
+
+			<div class="report_section__left">
+				<div class="d-flex flex-column person_report__section">
+					<img src="./images/image-jeremy.png" alt="Report of Person" />
+					<div class="d-flex flex-column">
+						<span>Report for</span>
+						<h1>Jeremy Robson</h1>
+					</div>
+				</div>
+				<ul>
+					<li class="report__list_item" data-active="daily">Daily</li>
+					<li class="report__list_item activeList" data-active="weekly">Weekly</li>
+					<li class="report__list_item" data-active="monthly">Monthly</li>
+				</ul>
+			</div>
+			<div class="tracking_analytics__right">
+				<div class="tracking_analytic__card">				
+					<img src="./images/icon-work.svg" alt="Work" class="tracking_anakytic__card_bg_img" />
+					<div class="tracking__analytic_bg_card">
+						<div class="d-flex justify-content-between align-items-center">
+							<span class="tracking_title">Work</span>
+							<svg width="21" height="5" class="card_ellipsis" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+								fill="#BBC0FF" fill-rule="evenodd"/>
+							</svg>							
+						</div>
+						<div class="d-flex flex-column">
+							<p class="tracking_time"><span class="timeframe__current" data-card="work"></span>hrs</p>
+							<span class="tracking_track_status">Last week - <span class="timeframe__previous" data-card="work"></span>hrs</span>
+						</div>
+					</div>
+				</div>
+				<div class="tracking_analytic__card">
+					<img src="./images/icon-play.svg" alt="Play" class="tracking_anakytic__card_bg_img" />
+					<div class="tracking__analytic_bg_card">
+						<div class="d-flex justify-content-between align-items-center">
+							<span class="tracking_title">Play</span>
+							<svg width="21" height="5" class="card_ellipsis" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+								fill="#BBC0FF" fill-rule="evenodd"/>
+							</svg>							
+						</div>
+						<div class="d-flex flex-column">
+							<p class="tracking_time"><span class="timeframe__current" data-card="play"></span>hrs</p>
+							<span class="tracking_track_status">Last week - <span class="timeframe__previous" data-card="play"></span>hrs</span>
+						</div>
+					</div>					
+				</div>
+				<div class="tracking_analytic__card">
+					<img src="./images/icon-study.svg" alt="Study" class="tracking_anakytic__card_bg_img" />
+					<div class="tracking__analytic_bg_card">
+						<div class="d-flex justify-content-between align-items-center">
+							<span class="tracking_title">Study</span>
+							<svg width="21" height="5" class="card_ellipsis" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+								fill="#BBC0FF" fill-rule="evenodd"/>
+							</svg>							
+						</div>
+						<div class="d-flex flex-column">
+							<p class="tracking_time"><span class="timeframe__current" data-card="study"></span>hrs</p>
+							<span class="tracking_track_status">Last week - <span class="timeframe__previous" data-card="study"></span>hrs</span>
+						</div>
+					</div>
+				</div>
+				<div class="tracking_analytic__card">
+					<img src="./images/icon-exercise.svg" alt="Exercise" class="tracking_anakytic__card_bg_img" />
+					<div class="tracking__analytic_bg_card">
+						<div class="d-flex justify-content-between align-items-center">
+							<span class="tracking_title">Exercise</span>
+							<svg width="21" height="5" class="card_ellipsis" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+								fill="#BBC0FF" fill-rule="evenodd"/>
+							</svg>							
+						</div>
+						<div class="d-flex flex-column">
+							<p class="tracking_time"><span class="timeframe__current" data-card="exercise"></span>hrs</p>
+							<span class="tracking_track_status">Last week - <span class="timeframe__previous" data-card="exercise"></span>hrs</span>
+						</div>
+					</div>
+				</div>
+				<div class="tracking_analytic__card">
+					<img src="./images/icon-social.svg" alt="Social" class="tracking_anakytic__card_bg_img" />
+					<div class="tracking__analytic_bg_card">
+						<div class="d-flex justify-content-between align-items-center">
+							<span class="tracking_title">Social</span>
+							<svg width="21" height="5" class="card_ellipsis" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+								fill="#BBC0FF" fill-rule="evenodd"/>
+							</svg>							
+						</div>
+						<div class="d-flex flex-column">
+							<p class="tracking_time"><span class="timeframe__current" data-card="social"></span>hrs</p>
+							<span class="tracking_track_status">Last week - <span class="timeframe__previous" data-card="social"></span>hrs</span>
+						</div>
+					</div>
+				</div>
+				<div class="tracking_analytic__card">
+					<img src="./images/icon-self-care.svg" alt="Self Care" class="tracking_anakytic__card_bg_img" />
+					<div class="tracking__analytic_bg_card">
+						<div class="d-flex justify-content-between align-items-center">
+							<span class="tracking_title">Self Care</span>
+							<svg width="21" height="5" class="card_ellipsis" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" 
+								fill="#BBC0FF" fill-rule="evenodd"/>
+							</svg>							
+						</div>
+						<div class="d-flex flex-column">
+							<p class="tracking_time"><span class="timeframe__current" data-card="self care"></span>hrs</p>
+							<span class="tracking_track_status">Last week - <span class="timeframe__previous" data-card="self care"></span>hrs</span>
+						</div>
+					</div>
+				</div>
+			</div>
+						
+		</main>
+
+
+		<footer class="attribution animate__animated animate__fadeIn animate__delay-1s">            
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            Coded by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.			
+        </footer>
+		<script type="module" src="./index.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+:root{
+    /* NEUTRAL */
+    --body-background: #0E1323;
+    --person-card-bg: #5747EA;
+    --normal-text: #7078C9;
+    --time-card-last-status: #BBC0FF;
+    --cards-bg: #1C204B;
+    --cards-hover-bg: #33397A;
+    --work-card-bg: #FF8B64;
+    --play-card-bg: #55C2E6;
+    --study-card-bg: #FF5E7D;
+    --exercise-card-bg: #4BCF82;
+    --social-card-bg: #7335D2;
+    --selfcare-card-bg: #F1C75B;
+    --white: hsl(0, 0%, 100%);    
+    /* FONTS */    
+    --ff-rubik: 'Rubik', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    font-family: var(--ff-rubik);
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background-color: var(--body-background);
+    font-family: var(--ff-rubik);
+    display: grid;
+    place-content: center;
+    overflow-y: auto;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-inline-block{ display: inline-block; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.justify-content-around { justify-content: space-around; }
+.align-items-center{ align-items: center;}
+
+.attribution{    
+    margin-top: 30px;  
+    text-align: center;
+    width: 100%;
+    color: var(--normal-text);
+    font-weight: 300;    
+    z-index: 1;
+    position: absolute;
+    bottom: 10px;
+}
+
+.attribution a{
+    color: var(--person-card-bg);
+}
+
+#time_tracking__main{
+    display: flex;
+    column-gap: 30px;    
+}
+
+.report_section__left{
+    width: 255px;
+    /* height: 518px; */
+    border-radius: 15px;
+    background: var(--cards-bg);
+    display: flex;
+    flex-direction: column;   
+    padding-bottom: 33px; 
+    align-self: flex-start;
+}
+
+.person_report__section{
+    width: 255px;
+    height: 354px;
+    border-radius: 15px;
+    background: var(--person-card-bg);
+    padding: 37px 32px 33px 32px;
+}
+
+.person_report__section img{
+    width: 78px;
+    height: 78px;
+    border: 3px solid var(--white);
+    border-radius: 50%;
+    margin-bottom: 43px;
+}
+
+.person_report__section span{
+    color: var(--time-card-last-status);
+    font-family: var(--ff-rubik);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.person_report__section h1{
+    color: var(--white);
+    font-family: var(--ff-rubik);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.report_section__left ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 26px 32px 0px 32px;
+}
+
+.report_section__left ul li{
+    color: var(--normal-text);
+    font-family: var(--ff-rubik);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.report_section__left ul li:hover,.activeList{
+    color: var(--white) !important;
+}
+
+.tracking_analytics__right{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 255px);
+    flex-wrap: wrap;
+}
+
+.tracking_analytic__card{
+    border-radius: 15px 15px 18px 18px;
+    position: relative;
+    display: flex;
+    overflow-y: hidden;
+}
+
+.tracking_anakytic__card_bg_img{
+    width: 78px;
+    position: absolute;
+    right: 18px;
+    object-fit: cover;
+    top: -10px;
+}
+
+.tracking_analytics__right .tracking_analytic__card:nth-child(4) img{
+    top: 0;
+}
+
+.tracking_analytics__right .tracking_analytic__card:nth-child(6) img{
+    top: -18px;
+}
+
+.tracking_analytics__right .tracking_analytic__card:nth-child(1){
+    background-color: var(--work-card-bg);    
+}
+
+.tracking_analytics__right .tracking_analytic__card:nth-child(2){
+    background-color: var(--play-card-bg);    
+}
+
+.tracking_analytics__right .tracking_analytic__card:nth-child(3){
+    background-color: var(--study-card-bg);    
+}
+
+.tracking_analytics__right .tracking_analytic__card:nth-child(4){
+    background-color: var(--exercise-card-bg);    
+}
+
+.tracking_analytics__right .tracking_analytic__card:nth-child(5){
+    background-color: var(--social-card-bg);    
+}
+
+.tracking_analytics__right .tracking_analytic__card:nth-child(6){
+    background-color: var(--selfcare-card-bg);    
+}
+
+.tracking__analytic_bg_card{
+    border-radius: 15px;
+    background: var(--cards-bg);
+    padding: 29px 30px 32px 30px;
+    align-self: flex-end;
+    z-index: 1;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.tracking__analytic_bg_card:hover{
+    background: var(--cards-hover-bg);
+}
+
+.card_ellipsis:hover path{
+    cursor: pointer;
+    fill: var(--white);
+}
+
+.tracking_title{
+    color: var(--white);
+    font-family: var(--ff-rubik);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.tracking_time{
+    color: var(--white);
+    font-family: var(--ff-rubik);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 25px;
+}
+
+.tracking_track_status{
+    color: var(--time-card-last-status);
+    font-family: var(--ff-rubik);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1180px) {
+    .report_section__left,.person_report__section,.tracking_anakytic__card_bg{
+        width: 215px;
+    }
+    .tracking_analytics__right{
+        grid-template-columns: repeat(3, 215px);
+    }    
+}
+@media only screen and (max-width: 1023px) {
+    .tracking_analytics__right {
+        grid-template-columns: repeat(2, 215px);
+    }
+    .tracking__analytic_bg_card{
+        margin-top: 40px;
+        padding: 28px 24px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    body{ row-gap: 30px; padding: 24px;}
+    #time_tracking__main{
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .attribution{ position: relative; margin: 20px 0px;}
+    .report_section__left{
+        width: 100%;
+    }
+    .person_report__section{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 20px;
+        height: auto;
+    }
+    .person_report__section img{ margin-bottom: 0; }
+    .report_section__left ul{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .tracking_analytics__right{
+        margin-top: 24px;
+    }
+    .tracking_time{ 
+        margin-top: 6px; 
+        font-size: 32px;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .person_report__section h1{
+        font-size: 23px;
+    }
+    .tracking_analytics__right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tracking__analytic_bg_card div:last-child {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .report_section__left ul{
+        justify-content: space-between;
+    }
+}
