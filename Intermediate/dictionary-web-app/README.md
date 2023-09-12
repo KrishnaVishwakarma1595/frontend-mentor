@@ -37,8 +37,8 @@ Users can be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-theme-based-calculator-app-using-javascript-oops-concept-HoP-1VdQjX)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/calculator-app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-theme-based-dictionary-web-app-using-bootstrap-and-js-oops-WZDs4P-3O6)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/dictionary-web-app/)
 
 ## My process
 
