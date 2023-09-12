@@ -31,9 +31,12 @@ Users can be able to:
 
 ### Screenshot
 
-![](./active-states-theme-1.png)
-![](./active-states-theme-2.png)
-![](./active-state-theme-3.png)
+![](./theme-light.png)
+![](./theme-dark.png)
+![](./theme-light-serif.png)
+![](./theme-light-mono.png)
+![](./theme-light-no-data.png)
+![](./theme-dark-no-data.png)
 
 ### Links
 
