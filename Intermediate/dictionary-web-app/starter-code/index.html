@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+		<title>Frontend Mentor | Dictionary web app</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body data-theme="light" data-theme-font="">
+		<header id="dictionary_app_header">
+			<img src="./assets/images/logo.svg" alt="Dictionary App Logo" class="w-auto" />
+			<div class="d-flex align-items-center" style="column-gap: 26px;">
+				<div class="dropdown header_nav_dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+						<span class="dictionary__dropdown_button_text"></span>
+						<svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8">
+							<path fill="none" stroke="#A445ED" stroke-width="1.5" d="m1 1 6 6 6-6"/>
+						</svg>
+					</button>
+					<ul class="nav_dropdown_menu nav_dropdown_menu_company dropdown-menu">
+						<li class="list-item font-sans-serif listActive" data-value="Sans Serif">Sans serif</li>
+						<li class="list-item font-serif" data-value="Serif">Serif</li>
+						<li class="list-item font-mono" data-value="Mono">Mono</li>
+					</ul>
+				</div>
+				<svg width="1" height="32" viewBox="0 0 1 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="1" height="32" fill="#E9E9E9"/>
+				</svg>
+				<svg class="theme-switcher" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="81" height="22" viewBox="0 0 81 22" fill="none">
+					<rect y="1" width="40" height="20" rx="10" fill="#757575"/>
+					<circle cx="10" cy="11" r="7" fill="white"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M60 10.449C59.9985 12.8283 60.8017 15.1383 62.2791 17.0033C63.7566 18.8683 65.8214 20.1788 68.138 20.7218C70.4545 21.2647 72.8866 21.0082 75.039 19.994C77.1912 18.9797 78.9373 17.2673 79.9931 15.1352C70.5442 15.1352 65.858 10.4479 65.858 1C64.0984 1.87311 62.6177 3.22033 61.5827 4.88981C60.5476 6.5593 59.9995 8.48469 60 10.449Z" stroke="#757575" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>				
+			</div>
+		</header>
+
+		<main id="dictionary_main">			
+			<form id="dictionary__search_form" class="position-relative">
+				<input type="text" value="" placeholder="Search for any word..." class="dictonary__search_bar" />
+				<img src="./assets/images/icon-search.svg" alt="Search Icon" class="w-auto position-absolute dictionary_search_icon"
+				style="right: 24.45px;top: 24px;cursor: pointer;" />
+				<svg style="right: 18.45px;top: 14px;cursor: pointer;" class="position-absolute cross_icon" width="36px" height="36px" viewBox="0 -0.5 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+					<g id="SVGRepo_tracerCarrier" stroke-linecap="round" strokeLinejoin="round"></g>
+					<g id="SVGRepo_iconCarrier"> 
+						<path d="M6.96967 16.4697C6.67678 16.7626 6.67678 17.2374 6.96967 17.5303C7.26256 17.8232 7.73744 17.8232 8.03033 17.5303L6.96967 16.4697ZM13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697L13.0303 12.5303ZM11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303L11.9697 11.4697ZM18.0303 7.53033C18.3232 7.23744 18.3232 6.76256 18.0303 6.46967C17.7374 6.17678 17.2626 6.17678 16.9697 6.46967L18.0303 7.53033ZM13.0303 11.4697C12.7374 11.1768 12.2626 11.1768 11.9697 11.4697C11.6768 11.7626 11.6768 12.2374 11.9697 12.5303L13.0303 11.4697ZM16.9697 17.5303C17.2626 17.8232 17.7374 17.8232 18.0303 17.5303C18.3232 17.2374 18.3232 16.7626 18.0303 16.4697L16.9697 17.5303ZM11.9697 12.5303C12.2626 12.8232 12.7374 12.8232 13.0303 12.5303C13.3232 12.2374 13.3232 11.7626 13.0303 11.4697L11.9697 12.5303ZM8.03033 6.46967C7.73744 6.17678 7.26256 6.17678 6.96967 6.46967C6.67678 6.76256 6.67678 7.23744 6.96967 7.53033L8.03033 6.46967ZM8.03033 17.5303L13.0303 12.5303L11.9697 11.4697L6.96967 16.4697L8.03033 17.5303ZM13.0303 12.5303L18.0303 7.53033L16.9697 6.46967L11.9697 11.4697L13.0303 12.5303ZM11.9697 12.5303L16.9697 17.5303L18.0303 16.4697L13.0303 11.4697L11.9697 12.5303ZM13.0303 11.4697L8.03033 6.46967L6.96967 7.53033L11.9697 12.5303L13.0303 11.4697Z" fill="#A445ED">							
+						</path> 
+					</g>
+				</svg>
+				<span class="error-message mt-2" style="display: none;">Whoops, can't be empty</span>
+			</form>
+			<div class="lds-ring loader"><div></div><div></div><div></div><div></div></div>
+			<div class="dictionary__results_container" style="display: none;">
+				<div class="d-flex justify-content-between align-items-center mt-5">
+					<h1 class="d-flex flex-column dictionary_result_term_phonetic" style="row-gap: 8px;">
+						<span class="dictionary__searched_term"></span>
+						<span class="dictionary__searched_term_symbolic"></span>
+					</h1>					
+					<svg class="dictionary__play_icon" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="75" height="75" viewBox="0 0 75 75">
+						<g fill="#A445ED" fill-rule="evenodd">
+							<circle cx="37.5" cy="37.5" r="37.5" opacity=".25"/>
+							<path d="M29 27v21l21-10.5z"/>
+						</g>
+					</svg>
+				</div>
+				<div class="dictionary__term_noun dictionary__noun_container">
+					<span class="dictionary__subheading">
+						noun
+						<svg class="ms-2 divider" width="656" height="1" viewBox="0 0 656 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="656" height="1" fill="#E9E9E9"/>
+						</svg>						
+					</span>
+					<div>
+						<span class="subtexts">Meaning</span>
+						<ul class="m-0 mt-4 d-flex flex-column dictionary__noun_definitions" style="row-gap: 13px;">													
+						</ul>
+					</div>
+					<div class="synonym_container">
+						<span class="subtexts">Synonyms</span>
+						<span class="purple_tags dictionary__term_synonyms"></span>
+					</div>
+				</div>
+				<div class="dictionary__term_noun dictionary__verb_container">
+					<span class="dictionary__subheading">
+						verb
+						<svg class="ms-2 divider" width="656" height="1" viewBox="0 0 656 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect width="656" height="1" fill="#E9E9E9"/>
+						</svg>						
+					</span>
+					<div>
+						<span class="subtexts">Meaning</span>
+						<ul class="m-0 mt-4 d-flex flex-column dictionary__verb_definitions" style="row-gap: 13px;">
+						</ul>
+					</div>				
+				</div>
+				<svg class="divider dividEnd" width="736" height="1" viewBox="0 0 736 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect width="736" height="1" fill="#E9E9E9"/>
+				</svg>	
+				<div class="d-flex mt-3 align-items-center flex-wrap" style="column-gap: 20px;">
+					<span class="subtexts" style="font-size: 14px;text-decoration: underline;">Source</span>
+					<a href="#" target="_blank">
+						<span class="sourceLink"></span>
+						<svg class="ms-2" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M6.09091 4.29545C6.50512 4.29545 6.84091 3.95967 6.84091 3.54545C6.84091 3.13124 6.50512 2.79545 6.09091 2.79545V4.29545ZM1.42603 3.97148L1.95635 4.50182L1.95637 4.50181L1.42603 3.97148ZM1.42603 12.574L1.95638 12.0437L1.95637 12.0436L1.42603 12.574ZM11.2045 7.90909C11.2045 7.49488 10.8688 7.15909 10.4545 7.15909C10.0403 7.15909 9.70455 7.49488 9.70455 7.90909H11.2045ZM4.83331 8.10603C4.54041 8.39893 4.54041 8.8738 4.83331 9.16669C5.1262 9.45959 5.60107 9.45959 5.89397 9.16669L4.83331 8.10603ZM13.1667 1.89397C13.4596 1.60107 13.4596 1.1262 13.1667 0.833306C12.8738 0.540413 12.3989 0.540413 12.106 0.833306L13.1667 1.89397ZM12.6364 2.11364C13.0506 2.11364 13.3864 1.77785 13.3864 1.36364C13.3864 0.949423 13.0506 0.613636 12.6364 0.613636V2.11364ZM9 0.613636C8.58579 0.613636 8.25 0.949423 8.25 1.36364C8.25 1.77785 8.58579 2.11364 9 2.11364V0.613636ZM13.3864 1.36364C13.3864 0.949423 13.0506 0.613636 12.6364 0.613636C12.2221 0.613636 11.8864 0.949423 11.8864 1.36364H13.3864ZM11.8864 5C11.8864 5.41421 12.2221 5.75 12.6364 5.75C13.0506 5.75 13.3864 5.41421 13.3864 5H11.8864ZM6.09091 2.79545H2.45455V4.29545H6.09091V2.79545ZM2.45455 2.79545C1.86987 2.79545 1.30913 3.02771 0.895692 3.44116L1.95637 4.50181C2.08849 4.36968 2.26769 4.29545 2.45455 4.29545V2.79545ZM0.895706 3.44115C0.482259 3.85458 0.25 4.41532 0.25 5H1.75C1.75 4.81314 1.82423 4.63394 1.95635 4.50182L0.895706 3.44115ZM0.25 5V11.5455H1.75V5H0.25ZM0.25 11.5455C0.25 12.1301 0.482269 12.6908 0.895685 13.1043L1.95637 12.0436C1.82422 11.9115 1.75 11.7323 1.75 11.5455H0.25ZM0.895678 13.1043C1.30913 13.5178 1.86988 13.75 2.45455 13.75V12.25C2.26768 12.25 2.08849 12.1758 1.95638 12.0437L0.895678 13.1043ZM2.45455 13.75H9V12.25H2.45455V13.75ZM9 13.75C9.58466 13.75 10.1454 13.5177 10.5588 13.1043L9.49818 12.0436C9.36603 12.1758 9.18683 12.25 9 12.25V13.75ZM10.5588 13.1043C10.9723 12.6908 11.2045 12.1301 11.2045 11.5455H9.70455C9.70455 11.7323 9.63033 11.9115 9.49818 12.0436L10.5588 13.1043ZM11.2045 11.5455V7.90909H9.70455V11.5455H11.2045ZM5.89397 9.16669L13.1667 1.89397L12.106 0.833306L4.83331 8.10603L5.89397 9.16669ZM12.6364 0.613636H9V2.11364H12.6364V0.613636ZM11.8864 1.36364V5H13.3864V1.36364H11.8864Z" fill="#757575"/>
+						</svg>						
+					</a>
+				</div>	
+			</div>
+			<div class="dictionary__result_not_found" style="display: none;">
+				<span>😕</span>
+				<h6>No Definitions Found</h6>
+				<p>
+					Sorry pal, we couldn't find definitions for the word you were looking for. You can try the search again at later time or head to the web instead.
+				</p>
+			</div>
+		</main>
+
+		<footer class="attribution animate__animated animate__fadeIn animate__delay-1s">            
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            Developed by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+			aria-label="Developer - Krishna Vishwakarma">
+				<img src="../../../assets/kv-footer.png" style="width: 130px;margin: 6px auto;" alt="Developer - Krishna Vishwakarma" />
+			</a>
+			<!-- <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.			 -->
+        </footer>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+		<script src="./index.js"></script>
+	</body>
+
+</html>
