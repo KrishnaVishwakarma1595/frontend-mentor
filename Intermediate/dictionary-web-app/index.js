@@ -1,9 +1,9 @@
 try {
     class Dictionary{
         constructor(){
-            this.searchTerm = "keyboard";
+            this.searchTerm = "";
             this.searchInput = document.querySelector('.dictonary__search_bar');
-            this.searchInput.value = "keyboard";
+
             this.switcher = document.querySelector('.theme-switcher');
             this.dropdownButton = document.querySelector('.dictionary__dropdown_button_text');
             this.listItems = document.querySelectorAll('.list-item');
@@ -241,7 +241,7 @@ try {
 
     const dictionaryApp = new Dictionary();
     dictionaryApp.init();
-    dictionaryApp.getDefinationOfWord();
+
 } catch (error) {
     console.log('Error detected', error);
 }
