@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+		<title>Frontend Mentor | Password generator app</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<main id="ps-generator__main">
+			<h1>Password Generator</h1>
+			<div class="ps_generated">
+				<input type="text" readonly class="ps_generated_password" value="" placeholder="P4$5W0rD!" />
+				<span class="d-flex align-items-center" style="column-gap: 16px;">
+					<span class="copiedText">copied</span>
+					<svg class="copy_to_clipboard" width="21" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20.341 3.091 17.909.659A2.25 2.25 0 0 0 16.319 0H8.25A2.25 2.25 0 0 0 6 2.25V4.5H2.25A2.25 2.25 0 0 0 0 6.75v15A2.25 2.25 0 0 0 2.25 24h10.5A2.25 2.25 0 0 0 15 21.75V19.5h3.75A2.25 2.25 0 0 0 21 17.25V4.682a2.25 2.25 0 0 0-.659-1.591ZM12.469 21.75H2.53a.281.281 0 0 1-.281-.281V7.03a.281.281 0 0 1 .281-.281H6v10.5a2.25 2.25 0 0 0 2.25 2.25h4.5v1.969a.282.282 0 0 1-.281.281Zm6-4.5H8.53a.281.281 0 0 1-.281-.281V2.53a.281.281 0 0 1 .281-.281H13.5v4.125c0 .621.504 1.125 1.125 1.125h4.125v9.469a.282.282 0 0 1-.281.281Zm.281-12h-3v-3h.451c.075 0 .147.03.2.082L18.667 4.6a.283.283 0 0 1 .082.199v.451Z" fill="#A4FFAF"/></svg>
+				</span>
+			</div>
+			<div class="ps_rules__container">
+				<p class="d-flex justify-content-between align-items-center m-0">
+					<span class="char__text">Character Length</span>
+					<span class="char__length">10</span>
+				</p>
+				<input type="range" class="form-range custom_range_input" id="customRange" min="1" max="20" value="10">
+				<ul class="ps__rules">
+					<li class="ps__rules_item">
+						<input id="ig_c1" type="checkbox" class="ps__checkbox" data-value="uppercase" />
+						<label for="ig_c1"></label>					
+					</li>
+					<li class="ps__rules_item">
+						<input id="ig_c2" type="checkbox" class="ps__checkbox" data-value="lowercase" />
+						<label for="ig_c2"></label>						
+					</li>
+					<li class="ps__rules_item">
+						<input id="ig_c3" type="checkbox" class="ps__checkbox" data-value="numbers" />
+						<label for="ig_c3"></label>
+					</li>
+					<li class="ps__rules_item">
+						<input id="ig_c4" type="checkbox" class="ps__checkbox" data-value="symbols" />
+						<label for="ig_c4"></label>
+					</li>
+				</ul>
+				<div class="strength__container">
+					<span class="strength__level_title">Strength</span>
+					<span class="d-flex align-items-center" style="column-gap: 16px;">
+						<span class="strength__level"></span>
+						<svg class="ps_strength" data-value="" xmlns="http://www.w3.org/2000/svg" width="64" height="28" viewBox="0 0 64 28" fill="none">
+							<rect x="1" y="1" width="8" height="26" stroke="#E6E5EA" stroke-width="2"/>
+							<rect x="19" y="1" width="8" height="26" stroke="#E6E5EA" stroke-width="2"/>
+							<rect x="37" y="1" width="8" height="26" stroke="#E6E5EA" stroke-width="2"/>
+							<rect x="54.5" y="1" width="8" height="26" stroke="#E6E5EA" stroke-width="2"/>
+						</svg>
+					</span>
+				</div>
+				<button class="generate__password">
+					<span>Generate</span>
+					<svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"><path fill="#24232C" d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"/></svg>
+				</button>
+			</div>
+		</main>
+		<footer class="attribution animate__animated animate__fadeIn animate__delay-1s mb-3">            
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            Developed by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+			aria-label="Developer - Krishna Vishwakarma">
+				<img src="../../assets/logo-color-white.png" style="width: 150px;margin: 6px auto;" alt="Developer - Krishna Vishwakarma" />
+			</a>
+			<!-- <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.			 -->
+        </footer>
+		<script src="./index.js"></script>
+	</body>
+
+</html>
