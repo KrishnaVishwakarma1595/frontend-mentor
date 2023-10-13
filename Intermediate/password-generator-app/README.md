@@ -27,12 +27,14 @@ Users can be able to:
 
 ### Screenshot
 
-<!-- ![](./theme-light.png) -->
+![](./screenshot-deskop-view.png)
+![](./screenshot-deskop-active-view.png)
+![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-theme-based-dictionary-web-app-using-bootstrap-and-js-oops-WZDs4P-3O6)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/dictionary-web-app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-password-generator-app-using-css-flexboxes-and-javascript-mEP0y5zldc)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/password-generator-app/)
 
 ## My process
 
