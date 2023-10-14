@@ -84,6 +84,7 @@ input[type=number] {
     row-gap: 40px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .form_container{

@@ -25,14 +25,16 @@ Users can be able to:
 
 ### Screenshot
 
-![](./screenshot-deskop-view.png)
-![](./screenshot-deskop-active-view.png)
+![](./screenshot-desktop.png)
+![](./screenshot-desktop-active-states.png)
+![](./screenshot-error-states.png)
+![](./screenshot-complete.png)
 ![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-password-generator-app-using-css-flexboxes-and-javascript-mEP0y5zldc)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/password-generator-app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-tip-calculator-app-using-css-gridsflexboxes-and-javascript-64qqzcrCSb)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/tip-calculator-app/)
 
 ## My process
 
