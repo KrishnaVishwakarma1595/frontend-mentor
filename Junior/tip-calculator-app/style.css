@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root{
+    /* COLORS */
+    --body-bg: #C5E4E7;
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --label: #5E7A7D;
+    --custom-button-text: #547878;
+    --grayish-cyan: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --very-light-grayish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+    --red: #E17457;
+    /* FONTS */
+    --ff-space-mono: 'Space Mono', monospace;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+    /* font-family: var(--ff-inconsolata); */
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background: var(--body-bg);
+    color: var(--dark-grayish-cyan);
+    font-family: var(--ff-space-mono);
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+a{
+    color: var(--source-link);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+svg{
+    transition: all 0.3s linear;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.attribution{    
+    text-align: center;
+    color: #5E7A7D;
+    font-weight: 300;    
+    margin-top: 50px;
+}
+
+.attribution a{
+    color: #00474B;
+}
+
+#splitter-main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_container{
+    width: 920px;
+    /* height: 481px; */
+    border-radius: 25px;
+    background: var(--white);
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.20);
+    display: flex;
+    column-gap: 48px;
+    padding: 45px 32px 32px 48px;
+}
+
+.container__left{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    flex: 1;
+    margin-top: 13px;
+}
+
+.form_label{
+    color: var(--label);
+    font-family: var(--ff-space-mono);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form-field{
+    display: flex;
+    flex-direction: column;
+    row-gap: 6px;
+    position: relative;
+}
+
+.form-field-input{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    border: 2px solid var(--very-light-grayish-cyan);
+    background: var(--very-light-grayish-cyan);
+    color: var(--very-dark-cyan);
+    text-align: right;
+    font-family: var(--ff-space-mono);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: right;
+    position: relative;
+    padding: 6px 16px;
+}
+
+.form-field-input::placeholder{
+    opacity: 0.35;
+}
+
+.form-field-input:focus{
+    border-color: #26C2AE !important;
+    outline: none;
+}
+
+.error-field{ border-color: var(--red); }
+
+.abs_input_icon{
+    position: absolute;
+    left: 17px;
+    top: 47px;
+}
+
+.tips_selection{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 16px 14px;
+}
+
+.spl_dflt__tip{
+    width: 117px;
+    height: 48px;
+    border-radius: 5px;
+    background: var(--very-dark-cyan);
+    color: var(--white);
+    text-align: center;
+    font-family: var(--ff-space-mono);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: all 0.3s linear;
+    border: none;
+}
+
+.spl_dflt__tip:hover{
+    background: #9FE8DF;
+    color: var(--very-dark-cyan);
+}
+
+.activeTip{
+    background: #26C2AE;
+    color: var(--very-dark-cyan);
+}
+
+.error-message{
+    color: var(--red);
+    text-align: right;
+    font-family: var(--ff-space-mono);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: none;
+}
+
+.spl_dflt__tip_custom{
+    width: 118px;
+    height: 48px;
+    border-radius: 5px;
+    background: var(--very-light-grayish-cyan);
+    color: var(--custom-button-text);
+    text-align: right;
+    font-family: var(--ff-space-mono);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: normal;
+}
+
+.custom-tip-input{
+    width: 118px;
+    height: 48px;
+    display: none;
+}
+
+.container__right{
+    width: 413px;
+    height: 417px;
+    border-radius: 15px;
+    background: var(--very-dark-cyan);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+    flex: 1;
+}
+
+.right-label{
+    color: var(--white);
+    font-family: var(--ff-space-mono);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.per-person{
+    color: var(--grayish-cyan);
+    font-family: var(--ff-space-mono);
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.calc_values{
+    color: #26C2AE;
+    text-align: right;
+    font-family: var(--ff-space-mono);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1px;
+    margin-bottom: 0px;
+}
+
+.tip_reset{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    background: #0D686D;
+    color: #9FE8DF;
+    text-align: center;
+    font-family: var(--ff-space-mono);
+    font-size: 20px;
+    font-style: normal;
+    border: none;
+    font-weight: 700;
+    line-height: normal;
+    transition: all 0.3s linear;
+    text-transform: uppercase;
+}
+
+.tip_reset:hover{
+    background: #9FE8DF;
+    color: var(--very-dark-cyan);
+}
+
+@media only screen and (max-width: 920px) {
+    #splitter-main{ margin-top: 50px;}
+    .form_container{
+        flex-direction: column;
+        width: 520px;
+        row-gap: 32px;
+    }
+    .container__right{ width: 100%;row-gap: 32px; }
+    .tips_selection{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .spl_dflt__tip,.spl_dflt__tip_custom{ width: auto; }
+    .custom-tip-input{ width: 137px; }
+}
+
+@media only screen and (max-width: 520px) {    
+    .form_container{
+        width: 100%;
+    }
+    .calc_values{
+        font-size: 32px;
+    }
+    .container__right{
+        padding: 39px 22px 24px 24px;
+    }
+    .form_container{
+        padding: 32px 24px;
+    }
+}
+
+@media only screen and (max-width: 425px) {    
+    .tips_selection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
