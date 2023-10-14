@@ -66,6 +66,7 @@ try {
                 this.customTipButton.style.display = 'none';
                 document.querySelector('.custom-tip-input').style.display = 'block';
                 this.isCustomTip = true;
+                this.allTips.forEach(button => button.classList.remove('activeTip'));
             })
 
             this.form.addEventListener('submit', (e) => {
