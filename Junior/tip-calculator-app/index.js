@@ -65,6 +65,7 @@ try {
             this.customTipButton.addEventListener('click', () => {
                 this.customTipButton.style.display = 'none';
                 document.querySelector('.custom-tip-input').style.display = 'block';
+                document.querySelector('.custom-tip-input').focus();
                 this.isCustomTip = true;
                 this.allTips.forEach(button => button.classList.remove('activeTip'));
             })
