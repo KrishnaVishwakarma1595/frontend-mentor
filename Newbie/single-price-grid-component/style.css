@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap');
+
+:root{
+    /* COLORS */
+    --body-bg: #E6EFF5;
+    --cyan: #2AB3B1;
+    --bright-yellow: #C0DF33;
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: #9AA7BE;   
+    --white: hsl(0, 0%, 100%);    
+    /* FONTS */
+    --ff-family-karla: 'Karla', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    padding-top: 32px;
+    background: var(--body-bg);
+    color: var(--grayish-blue);
+    font-family: var(--ff-family-karla);
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+a{
+    color: var(--source-link);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+svg{
+    transition: all 0.3s linear;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--grayish-blue);
+    font-weight: 300;    
+    margin-top: 30px;
+}
+
+.attribution a{
+    color: var(--cyan);
+}
+
+#price-grid__main{
+    width: 635px;
+    overflow: hidden;    
+    border-radius: 8px;
+    background: #FFF;    
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
+}
+
+.price_grid__top, .price_grid_bottom_left,.price_grid_bottom_right{
+    padding: 40px;
+}
+
+.price_grid__top h1{
+    color: var(--cyan);
+    font-family: var(--ff-family-karla);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    margin: 0;
+    margin-bottom: 24px;
+}
+
+.price_grid__top h2{
+    color: var(--bright-yellow);
+    font-family: var(--ff-family-karla);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+    margin: 0;
+}
+
+.price_grid__top p{
+    color: var(--grayish-blue);
+    font-family: var(--ff-family-karla);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    margin-top: 11px;
+    margin-bottom: 0;
+}
+
+.price_grid__bottom{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--cyan);
+}
+
+.bottom_heading{
+    display: block;
+    color: var(--white);
+    font-family: var(--ff-family-karla);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.225px;
+    margin-bottom: 18px;
+}
+
+.subsciption_price{
+    color: var(--white);
+    font-family: var(--ff-family-karla);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.4px;
+}
+
+.subsciption_type{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--ff-family-karla);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+.what_will_you_get{
+    color: var(--white);
+    font-family: var(--ff-family-karla);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+.price_gris_cta{
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    background: var(--bright-yellow);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.10);
+    border: none;
+    outline: none;
+    color: var(--white);
+    font-family: var(--ff-family-karla);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    margin-top: 26px;
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    will-change: box-shadow,transform;
+}
+
+.price_gris_cta:is(:hover) {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px rgba(0, 0, 0, 0.10);
+    transform: translateY(-2px);
+}
+
+.price_gris_cta:is(:active){
+    box-shadow: inset 0px 3px 7px rgba(0, 0, 0, 0.10);
+    transform: translateY(2px);
+}
+
+.price_grid_bottom_right{    
+    background: rgba(255, 255, 255, 0.1519);
+    display: flex;
+    flex-direction: column;
+}
+
+.why_to_choose{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.list_item{
+    color: rgba(255, 255, 255, 0.75);
+    font-family: var(--ff-family-karla);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.175px;
+}
+
+@media screen and (max-width: 660px) {
+    body{ padding: 32px 24px 0px 24px; }
+    #price-grid__main{ width: 100%; }
+    .price_grid__bottom{ grid-template-columns: 1fr; }
+    .price_grid__top{
+        padding: 28px 24px 32px 24px;
+    }
+    .price_grid_bottom_left,.price_grid_bottom_right{ padding: 24px; }
+}
+
+.swing-in-top-fwd {
+	-webkit-animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+    animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2023-10-26 14:57:45
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation swing-in-top-fwd
+ * ----------------------------------------
+ */
+ @-webkit-keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+@keyframes swing-in-top-fwd {
+    0% {
+        -webkit-transform: rotateX(-100deg);
+        transform: rotateX(-100deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+        transform: rotateX(0deg);
+        -webkit-transform-origin: top;
+        transform-origin: top;
+        opacity: 1;
+    }
+}
+  
