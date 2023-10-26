@@ -24,12 +24,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./theme-light.png)
+![](./screenshot-desktop.png)
+![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-theme-based-dictionary-web-app-using-bootstrap-and-js-oops-WZDs4P-3O6)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/dictionary-web-app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-single-price-grid-component-using-semantic-html-and-css-G6xV-qyvZT)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/single-price-grid-component/)
 
 ## My process
 
@@ -45,7 +46,7 @@ Users should be able to:
 - Writing Semantic HTML5 markup
 - CSS Flexbox & Grids
 - Mobile-first workflow
-- CSS Animations
+- [CSS Animations](https://animista.net/)
 
 ## Author
 
