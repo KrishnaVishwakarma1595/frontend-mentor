@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-single-price-grid-component-using-semantic-html-and-css-G6xV-qyvZT)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/single-price-grid-component/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-huddle-landing-page-with-single-introductory-section-jOQu5Oye2E)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/huddle-landing-page-with-single-introductory-section/)
 
 ## My process
 
