@@ -23,13 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-desktop.png)
-![](./screenshot-mobile.png)
+![](./screenshot-desktop-view.png)
+![](./screenshot-mobile-view.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-single-price-grid-component-using-semantic-html-and-css-G6xV-qyvZT)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/single-price-grid-component/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-social-proof-section-solution-with-semantic-html-and-css-O2XOxymij9)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/social-proof-section/)
 
 ## My process
 
