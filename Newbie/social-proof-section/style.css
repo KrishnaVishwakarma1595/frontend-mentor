@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root{
+    /* COLORS */
+    --white: #FFFFFF;
+    --dark-magenta: #512051;
+    --light-grayish-magenta: #927B91;
+    --very-light-orange: #F7F2F7;
+    --orange: #EF9546;
+    --soft-pink: #EE69A4;
+    /* FONTS */
+    --ff-spartan: 'League Spartan', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background: var(--white);
+    color: var(--dark-magenta);
+    font-family: var(--ff-spartan);
+    overflow-y: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    transition: all 0.3s linear;
+    padding: 100px 165px;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    background: url(./images/bg-pattern-top-desktop.svg) no-repeat;
+    background-size: contain;
+    width: 584px;
+    height: 362px;
+    top: 0;
+    left: 0;
+}
+
+body::after{
+    content: '';
+    position: absolute;
+    background-size: contain;
+    background: url(./images/bg-pattern-bottom-desktop.svg) no-repeat;
+    background-position: bottom right;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    right: 0;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+svg, path{
+    transition: all 0.3s linear;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--light-grayish-magenta);
+    font-weight: 300;    
+    margin-top: 30px;
+}
+
+.attribution a{ color: var(--dark-magenta); }
+
+#social__proof_main{
+    display: flex;
+    flex-direction: column;
+    row-gap: 70px;
+}
+
+.sp_section_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nou_products{
+    width: 445px;
+    height: 154px;
+    color: var(--dark-magenta);
+    font-family: var(--ff-spartan);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2px;
+}
+
+.service_description{
+    width: 445px;
+    color: var(--light-grayish-magenta);
+    font-family: var(--ff-spartan);
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.633px;
+}
+
+.ratings{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.top_rating_card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 32px;
+    width: 445px;
+    height: 56px;
+    padding-left: 32px;
+    /* padding: 20px 32px; */
+    border-radius: 8px;
+    background: var(--very-light-orange);
+    color: var(--dark-magenta);
+    font-family: var(--ff-spartan);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.ratings .top_rating_card:nth-child(2){
+    margin-left: 48px;
+}
+
+.ratings .top_rating_card:nth-child(3){
+    margin-left: 95px;
+}
+
+.sp_section_bottom{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+
+.testimonial_card{
+    width: 350px;
+    height: 234px;
+    border-radius: 8px;
+    background: var(--dark-magenta);
+    padding: 40px 32px;
+}
+
+.sp_testimonial_person{
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+}
+
+.buyer__name{
+    color: var(--white);
+    font-family: var(--ff-spartan);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.buyer__type{
+    color: var(--soft-pink);
+    font-family: var(--ff-spartan);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.blockquote__item{
+    color: var(--white);
+    font-family: var(--ff-spartan);
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: -0.304px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+}
+
+.sp_section_bottom .testimonial_card:nth-child(2){ margin-top: 16px; }
+.sp_section_bottom .testimonial_card:nth-child(3){ margin-top: 32px; }
+
+@media screen and (max-width: 1140px){
+    body{ padding: 100px 0px; }
+    .sp_section_bottom{
+        gap: 20px;
+    }
+    .testimonial_card{
+        width: 300px;
+        padding: 24px;
+    }
+}
+@media screen and (max-width: 1024px){
+    .sp_section_top{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0px 60px;
+    }
+    .nou_products,.service_description{ width: auto; height: auto; }
+    .ratings{
+        margin-top: 24px;
+    }
+    .sp_section_bottom{
+        padding: 0 60px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .testimonial_card{ width: 100%; height: 100%; }
+    .sp_section_bottom .testimonial_card:nth-child(2),
+    .sp_section_bottom .testimonial_card:nth-child(3){ margin-top: 0px; }
+    .sp_section_bottom .testimonial_card:nth-child(3){
+        grid-column: 1 / span 2;
+        margin: 0 auto;
+        width: 442px;
+    }
+}
+
+@media screen and (max-width: 768px){   
+    .sp_section_top, .sp_section_bottom{ padding: 0px 24px; }
+    .sp_section_bottom{
+        grid-template-columns: 1fr;
+    }
+    .sp_section_bottom .testimonial_card:nth-child(3){
+        grid-column: auto;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px){   
+    .ratings .top_rating_card:nth-child(2), .ratings .top_rating_card:nth-child(3){
+        margin-left: 0px;
+    }        
+    body::before{
+        width: 100%;
+    }
+    body::after{ background-position: center center; }
+}
+
+@media screen and (max-width: 545px){   
+    .ratings{ width: 100%; }
+    .top_rating_card{
+        flex-direction: column;
+        align-items: center;
+        height: 78px;
+        justify-content: center;
+        row-gap: 15px;
+        padding: 0;
+        width: 100%;
+    }
+    .nou_products{ font-size: 40px; line-height: 42px; }
+}
