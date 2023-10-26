@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+    /* COLORS */
+    --white: #ffffff;
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    /* FONTS */
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background: var(--violet) url(./images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    font-family: var(--ff-poppins);
+    overflow-y: auto;
+    position: relative;
+    padding: 64px 80px 0px 80px;
+    transition: all 0.3s linear;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+a{
+    color: var(--source-link);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+svg, path{
+    transition: all 0.3s linear;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--white);
+    font-weight: 300;    
+    margin-top: 30px;
+}
+
+.attribution a{ color: #FF52C1; }
+
+.huddle_heaeder_logo{
+    width: 200px;
+}
+
+#huddle__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    column-gap: 59px;
+}
+
+.huddle_main_left,.huddle_main_right{
+    flex: 1;
+}
+
+.huddle__illustrations{ width: 665px; }
+
+.huddle_main_right{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.huddle_main_right h1{
+    width: 487px;
+    color: var(--white);
+    font-family: var(--ff-poppins);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    margin: 0;
+}
+
+.huddle_main_right p{
+    color: var(--white);
+    font-family: var(--ff-open-sans);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 0;
+}
+
+.huddle__cta{
+    width: 200px;
+    height: 56px;
+    border-radius: 28px;
+    background: #FFF;
+    box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26);
+    border: none;
+    outline: none;
+    color: var(--violet);
+    text-align: center;
+    font-family: var(--ff-poppins);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition: all .14s ease-out;
+    white-space: nowrap;
+}
+
+.huddle_social_section{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 18px;
+    margin-top: 27px;
+}
+
+.huddle__cta:is(:hover, :active, :focus-visible){    
+    background: var(--soft-magenta);
+    color: var(--white);
+    /* box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.26); */
+    box-shadow: 4px 4px 0 #00252e;
+    transform: translate(-4px,-4px);
+    outline-offset: 1px;
+}
+
+.huddle__social_link{
+    width: 40px;
+    height: 40px;
+    border: 1.176px solid var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--white);
+}
+
+.huddle__social_link svg path{ fill: var(--white); }
+
+.huddle__social_link:is(:hover,:active,:focus,:focus-visible){
+    border-color: #FF52C1;
+}
+
+.huddle__social_link:is(:hover,:active,:focus,:focus-visible) svg path{
+    fill: #FF52C1;
+}
+
+@media screen and (max-width: 1400px){
+    body{ padding: 30px; }
+    .huddle_main_right{ margin-top: 0px; }
+    .huddle_main_right h1{ width: 100%; }
+}
+
+@media screen and (max-width: 1130px){
+    .huddle__illustrations{ width: 100%; }
+}
+
+@media screen and (max-width: 1023px){
+    body{
+        background: var(--violet) url(./images/bg-mobile.svg);         
+        background-size: cover;
+    }
+    #huddle__main{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .huddle_main_right{
+        margin-top: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        row-gap: 16px;
+    }
+    .huddle_social_section{
+        justify-content: center;
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width: 500px){
+    .huddle_heaeder_logo{ width: 120px; }
+    #huddle__main{ margin-top: 60px; }
+    .huddle_main_right h1{
+        font-size: 24px;
+        line-height: normal;        
+    }
+    .huddle_main_right p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .huddle__cta{ margin-top: 8px; font-size: 12px; height: 40px; }
+    .huddle__social_link {
+        width: 28px;
+        height: 28px;
+    }
+}
