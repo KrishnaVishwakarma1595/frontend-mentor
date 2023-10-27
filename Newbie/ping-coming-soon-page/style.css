@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+    /* COLORS */
+    --body-bg: #FAFAFA;
+    --white: #FFFFFF;
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+    /* FONTS */
+    --ff-franklin: 'Libre Franklin', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background: var(--body-bg);
+    color: var(--very-dark-blue);
+    font-family: var(--ff-franklin);
+    overflow-y: auto;
+    position: relative;    
+    transition: all 0.3s linear;
+    padding: 80px 0px 40px 0px;
+    display: flex;
+    row-gap: 40px;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+svg, path{
+    transition: all 0.3s linear;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--very-dark-blue);
+    font-weight: 400;        
+}
+
+.attribution a{ color: var(--blue); }
+
+.ping_logo{
+    width: 90px;
+    text-align: center;
+}
+
+#ping__main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ping__main h1{
+    color: var(--gray);
+    text-align: center;
+    font-family: var(--ff-franklin);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 60px;
+    margin: 0;
+}
+
+#ping__main p{
+    color: var(--very-dark-blue);
+    text-align: center;
+    font-family: var(--ff-franklin);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    margin-top: 16px;
+}
+
+.input_container{ 
+    display: flex;
+    column-gap: 16px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.email_input{
+    width: 421px;
+    height: 56px;
+    border-radius: 28px;
+    border: 1px solid var(--pale-blue);
+    outline: none;
+    background: #FFF;
+    box-shadow: 0px 0px 7px 3px rgba(0, 0, 0, 0.00);
+    color: var(--very-dark-blue);
+    font-family: var(--ff-franklin);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    padding: 18px 30px;
+}
+
+.email_input_error{
+    border-color: var(--light-red);
+}
+
+.email_input::placeholder{
+    color: #B8C7ED;
+}
+
+.notify_cta{
+    width: 200px;
+    height: 56px;
+    border-radius: 28px;
+    background: var(--blue);
+    color: var(--white);
+    border: none;
+    outline: none;
+    text-align: center;
+    font-family: var(--ff-franklin);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    box-shadow: 0px 5px 10px 2px rgba(76, 123, 243, 0.23);
+}
+
+.notify_cta:is(:hover) {
+    opacity: 0.75;
+    animation: bn54rotate 0.7s ease-in-out both;
+}
+
+.notify_cta:is(:hover) span{
+    animation: bn54storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+}
+
+.illustration{ 
+    width: 640px; 
+    margin-top: 94px;
+    margin-bottom: 72px;
+}
+
+.bottom_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.ping_social_section{
+    column-gap: 12.49px;
+    display: flex;
+}
+
+.ping__social_link{
+    width: 31.224px;
+    height: 31px;
+    border: 0.918px solid rgba(76, 123, 243, 0.15);
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s linear;
+}
+
+.ping__social_link svg path{
+    fill: var(--blue);
+}
+
+.ping__social_link:is(:hover){
+    background: var(--blue);
+}
+
+.ping__social_link:is(:hover) svg path{
+    fill: var(--white);
+}
+
+.copyright__text{
+    color: var(--gray);
+    font-family: var(--ff-franklin);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+@keyframes bn54rotate {
+    0% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+
+    50% {
+        transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+
+    75% {
+        transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bn54storm {
+    0% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+        transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+        transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+        transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0) translateZ(0);
+    }
+}
+
+.error-text{
+    color: var(--light-red);
+    font-family: var(--ff-franklin);
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 20px;
+    position: absolute;
+    bottom: -22px;
+    letter-spacing: 0.15px;
+    left: 30px;
+    display: none;
+}
+
+#alert-toaster{
+    position: absolute;
+    right: 30px;
+    top: -300px;
+    width: 300px;
+    background: var(--blue);
+    padding: 12px;
+    color: var(--white);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .3s linear;
+}
+
+@media screen and (max-width: 670px){
+    body{ row-gap: 32px; }
+    .ping_logo{ width: 56px; }
+    .illustration{ width: 320px; margin-top: 40px; }
+    #ping__main h1{
+        font-size: 22px;
+        line-height: 32px;
+    }
+    #ping__main p{
+        font-size: 12px;
+    }
+    .input_container{
+        flex-direction: column;
+        row-gap: 32px;
+        width: 100%;
+        align-items: center;
+    }
+    .error-text{
+        display: block;
+        text-align: center;
+        width: 100%;
+        left: 0;
+        bottom: 65px;
+    }
+}
+
+@media screen and (max-width: 425px){    
+    .email_input,.notify_cta{ width: 100%; }
+    .copyright__text{ font-size: 10px; }
+}
