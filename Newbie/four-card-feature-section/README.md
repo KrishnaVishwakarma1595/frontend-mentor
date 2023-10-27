@@ -23,13 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-desktop.png)
-![](./screenshot-mobile.png)
+![](./screenshot-default-desktop.png)
+![](./screenshot-default-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-huddle-landing-page-with-single-introductory-section-jOQu5Oye2E)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/huddle-landing-page-with-single-introductory-section/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-four-card-feature-section-fLTHArjit7)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/four-card-feature-section/)
 
 ## My process
 
