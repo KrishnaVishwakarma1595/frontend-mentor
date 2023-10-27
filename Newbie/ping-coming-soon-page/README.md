@@ -28,13 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-desktop.png)
-![](./screenshot-mobile.png)
+![](./screenshot-ping-desktop.png)
+![](./screenshot-ping-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-huddle-landing-page-with-single-introductory-section-jOQu5Oye2E)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/huddle-landing-page-with-single-introductory-section/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-ping-single-column-coming-soon-page-7WQ9AjaFmv)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/ping-coming-soon-page/)
 
 ## My process
 
@@ -51,7 +51,6 @@ Users should be able to:
 - CSS Flexbox & Grids
 - Mobile-first workflow
 - JS DOM Manipulation & Form handling
-- [CSS Animations](https://animista.net/)
 
 ## Author
 

@@ -13,12 +13,12 @@
 
 	<body>
 		<header id="ping__header">
-			<img src="./images/logo.svg" alt="PING." class="ping_logo" />
+			<img src="./images/logo.svg" alt="PING." class="ping_logo animate__animated animate__fadeIn" />
 		</header>
 		<main id="ping__main">
-			<h1>We are launching <b style="color: var(--very-dark-blue);font-weight: 700;">soon!</b> </h1>
-			<p>Subscribe and get notified</p>
-			<div class="input_container">
+			<h1 class="animate__animated animate__fadeIn animate__delay-1s">We are launching <b style="color: var(--very-dark-blue);font-weight: 700;">soon!</b> </h1>
+			<p class="animate__animated animate__fadeIn animate__delay-1s">Subscribe and get notified</p>
+			<div class="input_container animate__animated animate__fadeIn animate__delay-2s">
 				<input type="email" value="" placeholder="Your email address…" 
 				name="email" aria-label="email id" class="email_input" />
 				<span class="error-text"></span>
@@ -26,8 +26,8 @@
 					<span>Notify Me</span>
 				</button>
 			</div>
-			<img src="./images/illustration-dashboard.png" alt="PING Illustration" class="illustration" />
-			<div class="bottom_section" role="complementary">
+			<img src="./images/illustration-dashboard.png" alt="PING Illustration" class="illustration animate__animated animate__fadeIn animate__delay-2s" />
+			<div class="bottom_section animate__animated animate__fadeIn animate__delay-3s" role="complementary">
 				<div class="ping_social_section">
 					<a href="#" aria-label="Explore Facebook page" target="_blank" rel="noopener noreferrer" class="ping__social_link">
 						<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512">
@@ -52,7 +52,7 @@
 			</div>
 		</main>
 		<div id="alert-toaster" class="">
-			<span>🚀  We will notify you soon! </span>
+			<span role="complementary">🚀  We will notify you soon! </span>
 			<svg class="cross_close" style="cursor: pointer;" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
 				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
@@ -71,7 +71,7 @@
 			<!-- <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a> -->
         </footer>
 		
-		<script type="text/javascript">
+		<script>
 			try {
 				const actionBtn = document.querySelector('.notify_cta');
 				const alertMessage = document.querySelector('.error-text');
