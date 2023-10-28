@@ -229,9 +229,8 @@ svg, path{
     line-height: 26px;
 }
 
-.terms_services a{
-    color: #FF7979;
-    text-decoration: none;
+.terms_services span{
+    color: #FF7979;    
 }
 
 .error_message{

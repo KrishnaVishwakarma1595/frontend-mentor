@@ -27,13 +27,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-ping-desktop.png)
-![](./screenshot-ping-mobile.png)
+![](./screenshot-default-view-desktop.png)
+![](./screenshot-active-states-desktop.png)
+![](./screenshot-thanks-modal-desktop.png)
+![](./screenshot-default-view-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-ping-single-column-coming-soon-page-7WQ9AjaFmv)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/ping-coming-soon-page/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-intro-component-with-sign-up-form-using-semantic-html-and-js-dEYduzSpZB)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/intro-component-with-signup-form/)
 
 ## My process
 
