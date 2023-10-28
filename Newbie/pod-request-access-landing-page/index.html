@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+		<title>Frontend Mentor | Pod request access landing page</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<header class="pod_header">
+			<img src="./assets/desktop/logo.svg" alt="POD logo" class="header__logo" />
+		</header>
+		<main id="pod_main__container">
+			<h1>
+				Publish your podcasts <span>everywhere.</span>
+			</h1>
+			<p>
+				Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify,
+				Apple Podcasts, Google Podcasts, Pocket Casts and more!
+			</p>
+			<form id="pod_form">
+				<div class="form-field">
+					<input type="email" aria-label="Email address" placeholder="Email address" value=""
+					name="email" class="email_input" />
+					<span class="error-message"></span>
+					<button class="request_access">
+						Request Access
+					</button>
+				</div>
+			</form>
+			<div class="supports_by">
+				<img src="./assets/desktop/spotify.svg" alt="Spotify" class="support_spotify" />
+				<img src="./assets/desktop/apple-podcast.svg" alt="Apple podcast" class="support_apple" />
+				<img src="./assets/desktop/google-podcasts.svg" alt="Google podcasts" class="support_google" />
+				<img src="./assets/desktop/pocket-casts.svg" alt="Pocket casts" class="support_pocket" />
+			</div>
+			<img src="./assets/desktop/bg-pattern-dots.svg" alt="Pattern Dots" class="bg-pattern-dots" />
+		</main>
+		<div id="alert-toaster" class="">
+			<span role="complementary">🚀 We will notify you soon! 🚀 </span>
+			<svg class="cross_close" style="cursor: pointer;" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+				<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+				<g id="SVGRepo_iconCarrier"> 
+					<path d="M16 8L8 16M8.00001 8L16 16" stroke="#FFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> 
+				</g>
+			</svg>
+		</div>
+		<footer class="attribution animate__animated animate__fadeIn mb-3">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+			Developed by 
+			<a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+			aria-label="Developer - Krishna Vishwakarma">
+				<img src="../../assets/logo-color-white.png" style="width: 130px;margin: 6px auto;" alt="Developer - Krishna Vishwakarma" />
+			</a>
+			<!-- <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a> -->
+        </footer>
+		<script>
+			try {
+				const form = document.querySelector('#pod_form');
+				const input = document.querySelector('.email_input');
+				const errMessage = document.querySelector('.error-message');
+				const toaster = document.getElementById('alert-toaster');
+				const iconClose = document.querySelector('.cross_close');
+
+				const emailValidationRegex = /^(([^<>()[\]\\.,;:\s@']+(\.[^<>()[\]\\.,;:\s@']+)*)|('.+'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+				form.addEventListener('submit', (e) => {
+					e.preventDefault();
+
+					if(input.value === ''){
+						errMessage.textContent = 'Oops! Please add your email!';
+						errMessage.style.display = 'block';
+					}else if(!emailValidationRegex.test(input.value.toLowerCase())){
+						errMessage.textContent = 'Oops! Please check your email!'
+						errMessage.style.display = 'block';
+					}else{
+						errMessage.textContent = ''
+						errMessage.style.display = 'none';
+						toaster.style.top = "30px";
+						input.value = '';
+					}
+				})
+				
+				iconClose.addEventListener('click', () => {
+					toaster.style.top = "-300px";
+				})
+
+			} catch (error) {
+				console.log('error', error);
+			}
+		</script>
+	</body>
+
+</html>
