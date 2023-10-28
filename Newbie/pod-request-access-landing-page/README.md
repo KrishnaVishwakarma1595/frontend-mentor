@@ -27,13 +27,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-ping-desktop.png)
-![](./screenshot-ping-mobile.png)
+![](./screenshot-default-desktop-view.png)
+![](./active-states.png)
+![](./screenshot-default-mobile-view.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-ping-single-column-coming-soon-page-7WQ9AjaFmv)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/ping-coming-soon-page/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-pod-request-access-landing-page-VN9WxFqLp6)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/pod-request-access-landing-page/)
 
 ## My process
 
