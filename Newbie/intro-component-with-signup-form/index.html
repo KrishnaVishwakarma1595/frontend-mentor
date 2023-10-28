@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<title>Frontend Mentor | Intro component with sign up form</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<main id="container_main">
+			<div class="intro_section_left">
+				<h1>Learn to code by watching others</h1>
+				<p>
+					See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+					but understanding how developers think is invaluable.
+				</p>
+			</div>
+			<div class="form_container_right">
+				<p class="starting_trial">
+					<span>Try it free 7 days </span>
+					<span>then $20/mo. thereafter</span>
+				</p>
+				<form id="sign-up-form">
+					<div class="form-field">
+						<input type="text" aria-label="First Name" placeholder="First Name" value=""
+						class="fname form_input" name="first_name" />
+						<span class="error_message error_first_name"></span>
+					</div>
+					<div class="form-field">
+						<input type="text" aria-label="Last Name" placeholder="Last Name" value=""
+						class="lname form_input" name="last_name" />
+						<span class="error_message error_last_name"></span>
+					</div>
+					<div class="form-field">
+						<input type="email" aria-label="Email Address" placeholder="Email Address" value=""
+						class="email_input form_input" name="email" />
+						<span class="error_message error_email"></span>
+					</div>
+					<div class="form-field">
+						<input type="password" aria-label="Password" placeholder="Password" value=""
+						class="pwd_input form_input" name="password" />
+						<span class="error_message error_password"></span>
+					</div>
+					<div style="display: flex;flex-direction: column;row-gap: 8px;">
+						<button type="submit" class="submit_btn">
+							Claim your free trial
+						</button>
+						<span class="terms_services">
+							By clicking the button, you are agreeing to our <a href="#" target="_blank" rel="noopener noreferrer">
+								Terms and Services
+							</a>
+						</span>
+					</div>
+				</form>
+			</div>		
+		</main>
+		<div id="success-modal" role="dialog">
+			<div class="modal_body">
+				<img src="./images/checked-success.svg" alt="Success" class="success_icon" />
+				<p>
+					Thank you for registering. It'll be wonderfull journey for us!
+				</p>
+				<button class="close_modal">
+					Close
+				</button>
+			</div>
+		</div>
+		<footer class="attribution animate__animated animate__fadeIn mb-3">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+			Developed by 
+			<a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+			aria-label="Developer - Krishna Vishwakarma">
+				<img src="../../assets/kv-footer.png" style="width: 130px;margin: 6px auto;" alt="Developer - Krishna Vishwakarma" />
+			</a>
+			<!-- <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a> -->
+        </footer>
+		<script src="./index.js"></script>
+	</body>
+
+</html>
