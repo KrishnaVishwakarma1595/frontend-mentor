@@ -31,12 +31,20 @@ Users should be able to:
 
 ### Screenshot
 
-![](./theme-light.png)
+![](./screenshots/screenshot-desktop-dview.png)
+![](./screenshots/screenshot-desktop-step1-error.png)
+![](./screenshots/screenshot-desktop-step1-filled.png)
+![](./screenshots/screenshot-desktop-step2-default.png)
+![](./screenshots/screenshot-desktop-step2-active.png)
+![](./screenshots/screenshot-desktop-step3-active.png)
+![](./screenshots/screenshot-desktop-step4.png)
+![](./screenshots/screenshot-desktop-thanks.png)
+![](./screenshots/screenshot-mobile-dview.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-theme-based-dictionary-web-app-using-bootstrap-and-js-oops-WZDs4P-3O6)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/dictionary-web-app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-multistep-form-with-semantic-html-and-js-oops-concept-0LkI-ScOX4)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Advanced/multi-step-form/)
 
 ## My process
 
