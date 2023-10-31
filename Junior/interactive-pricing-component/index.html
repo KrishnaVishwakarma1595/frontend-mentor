@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<title>Frontend Mentor | Interactive pricing component</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">	
+	</head>
+
+	<body>
+		<main id="ipc_main">
+			<div class="ipc_header">
+				<img src="./images/pattern-circles.svg" alt="Circle Patterns Logo" class="pattern_circles" />
+				<h1>Simple, traffic-based pricing</h1>
+				<p>Sign-up for our 30-day trial. No credit card required.</p>
+			</div>
+			<div class="ipc__pricing_container">
+				<div class="d-flex justify-content-between align-items-center">
+					<span class="page__views"><span class="page_views_total">100K </span>Pageviews</span>
+					<span class="pricing_per_moyr">
+						<span class="pricing_total">$16.00</span>
+						<span class="pricing_per_sl">/ month</span>
+					</span>
+				</div>
+				<div class="slider">					
+					<input type="range" class="form-range" id="custom-range" aria-label="Princing range"
+					min="1000" max="1000000" step="1000" value="100000">
+				</div>
+				<div class="switcher_container">
+					<span class="switcher_option option_monthly">Monthly Billing</span>
+					<div class="switch" data-value="Monthly">
+						<div class="switcher_circle"></div>
+					</div>
+					<div class="d-flex align-items-center" style="column-gap: 15px;">
+						<span class="switcher_option option_monthly">Yearly Billing</span>
+						<span class="yearly_discount">25% <span class="hide_m">discount</span></span>
+					</div>
+				</div>
+				<div class="bottom_cta_container">
+					<ul class="access_list">
+						<li class="access_list_item">
+							<img src="./images/icon-check.svg" alt="Icon Check" class="icon_check" />
+							<span>Unlimited websites</span>
+						</li>
+						<li class="access_list_item">
+							<img src="./images/icon-check.svg" alt="Icon Check" class="icon_check" />
+							<span>100% data ownership</span>
+						</li>
+						<li class="access_list_item">
+							<img src="./images/icon-check.svg" alt="Icon Check" class="icon_check" />
+							<span>Email reports</span>
+						</li>
+					</ul>
+					<button class="cta_btn">
+						Start my trial
+					</button>
+				</div>
+			</div>		
+		</main>
+
+		<footer class="attribution animate__animated animate__fadeIn mb-3">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+			Developed by 
+			<a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+			aria-label="Developer - Krishna Vishwakarma">
+				<img src="../../assets/kv-footer.png" style="width: 130px;margin: 6px auto;" alt="Developer - Krishna Vishwakarma" />
+			</a>
+			<!-- <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a> -->
+        </footer>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" 
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" 
+		crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" 
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+		<script src="./index.js"></script>
+	</body>
+
+</html>
