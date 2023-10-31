@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+		<title>Frontend Mentor | Multi-step form</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">		
+	</head>
+
+
+	<body>
+		<main id="msf_main">
+			<div class="msf__sidebar">
+				<ul class="sidebar__list" data-active="1">
+					<li class="sidebar_list_item">
+						<span class="step-count">1</span>
+						<div class="step_info">
+							<span>Step 1</span>
+							<span>Your info</span>
+						</div>
+					</li>
+					<li class="sidebar_list_item">
+						<span class="step-count">2</span>
+						<div class="step_info">
+							<span>Step 2</span>
+							<span>Select plan</span>
+						</div>
+					</li>
+					<li class="sidebar_list_item">
+						<span class="step-count">3</span>
+						<div class="step_info">
+							<span>Step 3</span>
+							<span>Add-ons</span>
+						</div>
+					</li>
+					<li class="sidebar_list_item">
+						<span class="step-count">4</span>
+						<div class="step_info">
+							<span>Step 4</span>
+							<span>Summary</span>
+						</div>
+					</li>
+				</ul>				
+			</div>
+			<div class="msf__form_container">
+				<form id="step-1" data-step="1">
+					<h1 class="form_heading"></h1>
+					<p class="form_step_description"></p>
+					<div class="form_step_1">
+						<div class="form_field">
+							<div class="d-flex justify-content-between align-items-center">
+								<label for="name">Name</label>
+								<span class="error-message error_name" aria-hidden="true">This field is required</span>
+							</div>
+							<input type="text" id="name" value="" placeholder="e.g. Stephen King" name="name" 
+							class="form_input name_input" />
+						</div>
+						<div class="form_field">
+							<div class="d-flex justify-content-between align-items-center">
+								<label for="email">Email Address</label>
+								<span class="error-message error_email" aria-hidden="true">This field is required</span>
+							</div>							
+							<input type="email" id="email" value="" placeholder="e.g. stephenking@lorem.com" name="email" 
+							class="form_input email_input" />
+						</div>
+						<div class="form_field">
+							<div class="d-flex justify-content-between align-items-center">
+								<label for="phone">Phone Number</label>
+								<span class="error-message error_phone" aria-hidden="true">This field is required</span>
+							</div>								
+							<input type="tel" id="phone" value="" placeholder="e.g. +1 234 567 890" name="phone" 
+							class="form_input phone_input" minlength="10" maxlength="13" />
+						</div>
+					</div>
+					<div class="form_step_2" style="display: none;">
+						<div class="plans">
+							<div class="plan_card" data-value="Arcade">
+								<img src="./assets/images/icon-arcade.svg" alt="Arcard plan" class="plan_icon" />
+								<div class="d-flex flex-column">
+									<span class="plan_name">Arcade</span>
+									<span class="plan_price">$9/mo</span>
+									<span class="plan_yearly">2 months free</span>
+								</div>
+							</div>
+							<div class="plan_card" data-value="Advanced">
+								<img src="./assets/images/icon-advanced.svg" alt="Advanced plan" class="plan_icon" />
+								<div class="d-flex flex-column">
+									<span class="plan_name">Advanced</span>
+									<span class="plan_price">$12/mo</span>
+									<span class="plan_yearly">2 months free</span>
+								</div>
+							</div>
+							<div class="plan_card" data-value="Pro">
+								<img src="./assets/images/icon-pro.svg" alt="Pro plan" class="plan_icon" />
+								<div class="d-flex flex-column">
+									<span class="plan_name">Pro</span>
+									<span class="plan_price">$15/mo</span>
+									<span class="plan_yearly">2 months free</span>
+								</div>
+							</div>
+						</div>
+						<div class="switch" data-plan="Monthly">
+							<span class="switch_option switch_opt_monthly">Monthly</span>
+							<div class="switch_bar">
+								<div class="switch_circle"></div>
+							</div>
+							<span class="switch_option switch_opt_yearly">Yearly</span>
+						</div>
+						<span class="error-message error_plan" style="text-align: left;">Please select any plan!</span>
+					</div>
+					<div class="form_step_3" style="display: none;">
+						<div class="add_on_card">
+							<div class="d-flex align-items-center" style="column-gap: 24px;">
+								<div class="form_cb_box">
+									<input type="checkbox" id="cb_1" value="" class="form_checkbox" data-value="1">
+									<label for="cb_1"></label>
+								</div>
+								<div class="add_on_services">
+									<span class="add_on_service_name">Online service</span>
+									<span class="add_on_benefit">Access to multiplayer games</span>
+								</div>
+							</div>
+							<span class="add_on_price">
+								+$10/yr
+							</span>
+						</div>
+						<div class="add_on_card">
+							<div class="d-flex align-items-center" style="column-gap: 24px;">
+								<div class="form_cb_box">
+									<input type="checkbox" id="cb_2" value="" class="form_checkbox" data-value="2">
+									<label for="cb_2"></label>
+								</div>
+								<div class="add_on_services">
+									<span class="add_on_service_name">Larger storage</span>
+									<span class="add_on_benefit">Extra 1TB of cloud save</span>
+								</div>
+							</div>
+							<span class="add_on_price">
+								+$20/yr
+							</span>
+						</div>
+						<div class="add_on_card">
+							<div class="d-flex align-items-center" style="column-gap: 24px;">
+								<div class="form_cb_box">
+									<input type="checkbox" id="cb_3" value="" class="form_checkbox" data-value="3">
+									<label for="cb_3"></label>
+								</div>
+								<div class="add_on_services">
+									<span class="add_on_service_name">Customizable profile</span>
+									<span class="add_on_benefit">Custom theme on your profile</span>
+								</div>
+							</div>
+							<span class="add_on_price">
+								+$20/yr
+							</span>
+						</div>
+					</div>
+					<div class="form_step_4" style="display: none;">
+						<div class="summary_container">
+							<div class="plan_summary">
+								<div class="plan_option">
+									<span class="selected_plan">Arcade (Yearly)</span>
+									<span class="plan_change">Change</span>
+								</div>
+								<span class="final_plan_price">$9/yr</span>
+							</div>
+							<ul class="add_on_summary">								
+							</ul>
+						</div>
+						<div class="d-flex justify-content-between align-items-center" style="padding: 0px 24px;">
+							<span class="total-per">Total (per year)</span>
+							<span class="total_price">$120/yr</span>
+						</div>
+					</div>
+				</form>
+				<div class="form_action_container">
+					<button type="button" class="step_go_back">
+						Go Back
+					</button>
+					<button type="submit" class="step_next">
+						Next Step
+					</button>			
+				</div>
+				<div class="thanks_container">
+					<img src="./assets/images/icon-thank-you.svg" alt="Icon Checkmark" class="thanks_icon" />
+					<h2>Thank you!</h2>
+					<p>
+						Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, 
+						please feel free to email us at support@loremgaming.com.
+					</p>
+				</div>
+			</div>				
+		</main>
+
+		<footer class="attribution animate__animated animate__fadeIn mb-3">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+			Developed by 
+			<a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+			aria-label="Developer - Krishna Vishwakarma">
+				<img src="../../assets/kv-footer.png" style="width: 130px;margin: 6px auto;" alt="Developer - Krishna Vishwakarma" />
+			</a>
+			<!-- <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a> -->
+        </footer>
+		<script src="./index.js"></script>
+	</body>
+
+</html>
