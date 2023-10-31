@@ -35,14 +35,14 @@ If the visitor switches the toggle to yearly billing, a 25% discount should be a
 
 ### Screenshot
 
-![](./screenshot-deskop-view.png)
-![](./screenshot-deskop-active-view.png)
-![](./screenshot-mobile.png)
+![](./screenshot-desktop-default.png)
+![](./screenshot-active-states.png)
+![](./screenshot-mobile-default.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-password-generator-app-using-css-flexboxes-and-javascript-mEP0y5zldc)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Intermediate/password-generator-app/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-interactive-pricing-component-solution-G6tf9-0lVj)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/interactive-pricing-component/)
 
 ## My process
 
