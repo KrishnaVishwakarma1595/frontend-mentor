@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<title>Frontend Mentor | [Challenge Name Here]</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body data-theme="light">
+		<header id="sm_theme_header">
+			<div class="d-flex flex-column">
+				<h1>Social Media Dashboard</h1>
+				<em>Total Followers: 23,004</em>
+			</div>
+			<span class="mob_seperator"></span>
+			<div class="switcher_container">
+				<span>Dark Mode</span>				
+				<svg class="toggle-switch" style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="48" height="24" viewBox="0 0 48 24" fill="none">
+					<rect class="switch" width="48" height="24" rx="12" />
+					<circle class="switch_circle" cx="12" cy="12" r="9" />
+					<defs>
+					  <linearGradient id="paint0_linear_0_861" x1="24.4764" y1="-11.7618" x2="5.65743" y2="25.876" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#40DB82"/>
+						<stop offset="1" stop-color="#388FE7"/>
+					  </linearGradient>
+					</defs>
+				</svg>				
+			</div>
+		</header>
+		<main id="sm_analytics_container">
+			<div class="sm_analytics_top_cards">
+				<div class="sman_top_card top_card_facebook">
+					<div class="social_platform">
+						<img src="./images/icon-facebook.svg" alt="Icon Facebook" class="social_icon_top_card" />
+						<span>@nathanf</span>
+					</div>
+					<div class="number_of_followers">
+						<h2>1987</h2>
+						<span>Followers</span>
+					</div>
+					<p class="today_results">
+						<img src="./images/icon-up.svg" alt="Icon Up Green" class="up_green_icon" />
+						<span class="up_green">12 Today</span>
+					</p>
+				</div>
+				<div class="sman_top_card top_card_twitter">
+					<div class="social_platform">
+						<img src="./images/icon-twitter.svg" alt="Icon Twitter" class="social_icon_top_card" />
+						<span>@nathanf</span>
+					</div>
+					<div class="number_of_followers">
+						<h2>1044</h2>
+						<span>Followers</span>
+					</div>
+					<p class="today_results">
+						<img src="./images/icon-up.svg" alt="Icon Up Green" class="up_green_icon" />
+						<span class="up_green">99 Today</span>
+					</p>
+				</div>
+				<div class="sman_top_card top_card_instagram">
+					<div class="social_platform">
+						<img src="./images/icon-instagram.svg" alt="Icon Instragram" class="social_icon_top_card" />
+						<span>@realnathanf</span>
+					</div>
+					<div class="number_of_followers">
+						<h2>11k</h2>
+						<span>Followers</span>
+					</div>
+					<p class="today_results">
+						<img src="./images/icon-up.svg" alt="Icon Up Green" class="up_green_icon" />
+						<span class="up_green">1099 Today</span>
+					</p>
+				</div>
+				<div class="sman_top_card top_card_youtube">
+					<div class="social_platform">
+						<img src="./images/icon-youtube.svg" alt="Icon YouTube" class="social_icon_top_card" />
+						<span>Nathan F.</span>
+					</div>
+					<div class="number_of_followers">
+						<h2>8239</h2>
+						<span>Subscribers</span>
+					</div>
+					<p class="today_results">
+						<img src="./images/icon-down.svg" alt="Icon Down Red" class="down_red_icon" />
+						<span class="down_red">144 Today</span>
+					</p>
+				</div>
+			</div>
+			<h3 class="overview_seperator">Overview - Today</h3>
+			<div class="sm_analytics_bottom_cards">
+				<div class="overview_cards">
+					<div class="d-flex justify-content-between align-items-center">
+						<span>Page Views</span>
+						<img src="./images/icon-facebook.svg" alt="Icon Facebook" class="social_icon_top_card" />
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<h4>87</h4>
+						<div class="d-flex align-items-center" style="column-gap: 5px;">
+							<img src="./images/icon-up.svg" alt="Icon Up Green" class="up_green_icon" />
+							<span class="up_green">3%</span>
+						</div>
+					</div>
+				</div>
+				<div class="overview_cards">
+					<div class="d-flex justify-content-between align-items-center">
+						<span>Likes</span>
+						<img src="./images/icon-facebook.svg" alt="Icon Facebook" class="social_icon_top_card" />
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<h4>52</h4>
+						<div class="d-flex align-items-center" style="column-gap: 5px;">
+							<img src="./images/icon-down.svg" alt="Icon Down Red" class="down_red_icon" />
+							<span class="down_red">2%</span>
+						</div>
+					</div>
+				</div>
+				<div class="overview_cards">
+					<div class="d-flex justify-content-between align-items-center">
+						<span>Likes</span>
+						<img src="./images/icon-instagram.svg" alt="Icon Instragram" class="social_icon_top_card" />
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<h4>5462</h4>
+						<div class="d-flex align-items-center" style="column-gap: 5px;">
+							<img src="./images/icon-up.svg" alt="Icon Up Green" class="up_green_icon" />
+							<span class="up_green">2257%</span>
+						</div>
+					</div>
+				</div>
+				<div class="overview_cards">
+					<div class="d-flex justify-content-between align-items-center">
+						<span>Profile Views</span>
+						<img src="./images/icon-instagram.svg" alt="Icon Instragram" class="social_icon_top_card" />
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<h4>52k</h4>
+						<div class="d-flex align-items-center" style="column-gap: 5px;">
+							<img src="./images/icon-up.svg" alt="Icon Up Green" class="up_green_icon" />
+							<span class="up_green">1375%</span>
+						</div>
+					</div>
+				</div>
+				<div class="overview_cards">
+					<div class="d-flex justify-content-between align-items-center">
+						<span>Retweets</span>
+						<img src="./images/icon-twitter.svg" alt="Icon Twitter" class="social_icon_top_card" />
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<h4>117</h4>
+						<div class="d-flex align-items-center" style="column-gap: 5px;">
+							<img src="./images/icon-up.svg" alt="Icon Up Green" class="up_green_icon" />
+							<span class="up_green">303%</span>
+						</div>
+					</div>
+				</div>
+				<div class="overview_cards">
+					<div class="d-flex justify-content-between align-items-center">
+						<span>Likes</span>
+						<img src="./images/icon-twitter.svg" alt="Icon Twitter" class="social_icon_top_card" />
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<h4>507</h4>
+						<div class="d-flex align-items-center" style="column-gap: 5px;">
+							<img src="./images/icon-up.svg" alt="Icon Up Green" class="up_green_icon" />
+							<span class="up_green">553%</span>
+						</div>
+					</div>
+				</div>
+				<div class="overview_cards">
+					<div class="d-flex justify-content-between align-items-center">
+						<span>Likes</span>
+						<img src="./images/icon-youtube.svg" alt="Icon YouTube" class="social_icon_top_card" />
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<h4>107</h4>
+						<div class="d-flex align-items-center" style="column-gap: 5px;">
+							<img src="./images/icon-down.svg" alt="Icon Down Red" class="down_red_icon" />							
+							<span class="down_red">19%</span>
+						</div>
+					</div>
+				</div>
+				<div class="overview_cards">
+					<div class="d-flex justify-content-between align-items-center">
+						<span>Total Views</span>
+						<img src="./images/icon-youtube.svg" alt="Icon YouTube" class="social_icon_top_card" />
+					</div>
+					<div class="d-flex justify-content-between align-items-center">
+						<h4>1407</h4>
+						<div class="d-flex align-items-center" style="column-gap: 5px;">
+							<img src="./images/icon-down.svg" alt="Icon Down Red" class="down_red_icon" />							
+							<span class="down_red">12%</span>
+						</div>
+					</div>
+				</div>				
+			</div>	
+		</main>
+
+		<footer class="attribution animate__animated animate__fadeIn mb-3">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+			Developed by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>
+        </footer>
+
+		<script>
+
+			const theme = localStorage.getItem('theme');            
+
+            if(theme){
+                document.body.dataset.theme = theme;
+            }else{
+                const a = window.matchMedia("(prefers-color-scheme: dark)");
+                if(a.matches){
+                    document.body.dataset.theme = 'dark';
+                    localStorage.setItem('theme', 'dark');
+                }else{
+                    localStorage.setItem('theme', 'light');
+                }
+            }
+
+			document.querySelector('.toggle-switch').addEventListener('click', (e) => {
+				if(document.body.dataset.theme === 'light'){
+					document.body.dataset.theme = "dark";
+                    localStorage.setItem('theme', 'dark');
+					document.querySelector('.switch_circle').style.transform = 'translateX(0px)';
+				}else{
+					document.body.dataset.theme = "light";
+                    localStorage.setItem('theme', 'light');
+					document.querySelector('.switch_circle').style.transform = 'translateX(24px)';
+				}
+			})
+
+
+		</script>
+
+	</body>
+
+</html>
