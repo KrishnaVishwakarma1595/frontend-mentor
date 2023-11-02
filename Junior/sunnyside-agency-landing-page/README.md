@@ -25,12 +25,14 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot-desktop-default.png)
+![](./screenshot-mobile-default.png)
+![](./screenshot-mobile-menu.png)
 
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-news-homepage-using-css-grids-and-flexboxes-pwOhovhwl5)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/news-homepage/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-sunnyside-agency-landing-page-using-css-grids-and-flexboxes-3p6Tmlna9B)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/sunnyside-agency-landing-page/)
 
 ## My process
 
