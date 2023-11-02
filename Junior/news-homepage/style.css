@@ -54,7 +54,7 @@ svg{
 }
 
 .attribution a{
-    color: var(--soft-red);
+    color: var(--very-dark-blue);
 }
 
 .nh_header{
@@ -131,6 +131,7 @@ svg{
     display: grid;
     grid-template-columns: 1fr 350px;
     gap: 30px;
+    overflow-x: hidden;
 }
 
 .article_figure{
@@ -143,6 +144,7 @@ svg{
     display: flex;
     flex-direction: column;
     row-gap: 28px;
+    overflow: hidden;
 }
 
 .article_content{

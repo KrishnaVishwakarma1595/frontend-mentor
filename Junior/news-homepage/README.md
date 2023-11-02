@@ -24,12 +24,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-dark-default.png)
+![](./screenshot-desktop-default.png)
+![](./screenshot-desktop-active.png)
+![](./screenshot-mobile.png)
+![](./screenshot-mobile-menu.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-theme-based-social-media-dashboard-with-theme-switcher-BFDBSNOmmu)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/social-media-dashboard-with-theme-switcher/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-news-homepage-using-css-grids-and-flexboxes-pwOhovhwl5)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/news-homepage/)
 
 ## My process
 
