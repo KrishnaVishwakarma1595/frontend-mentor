@@ -31,6 +31,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 160px 80px;
+    overflow-x: hidden;
 }
 
 button{ 
@@ -69,6 +70,7 @@ svg{
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 24px 30px;
+    overflow: hidden;
 }
 
 .testimonial_card{

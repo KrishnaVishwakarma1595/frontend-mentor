@@ -23,12 +23,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-dark-default.png)
+![](./screenshot-desktop-view.png)
+![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-theme-based-social-media-dashboard-with-theme-switcher-BFDBSNOmmu)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/social-media-dashboard-with-theme-switcher/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-testimonials-grid-section-Fui-7QGI-y)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/testimonials-grid-section/)
 
 ## My process
 
