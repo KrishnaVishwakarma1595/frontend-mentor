@@ -25,11 +25,14 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot-desktop.png)
+![](./screenshot-desktop-active-states.png)
+![](./screenshot-mobile.png)
+![](./screenshot-mobile-active-states.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-pricing-component-with-toggle-button-6RH7i478QO)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/pricing-component-with-toggle/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-project-tracking-intro-component-2VgzE3u_LY)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/project-tracking-intro-component/)
 
 ## My process
 
