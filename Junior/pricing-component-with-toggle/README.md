@@ -26,11 +26,12 @@ Users should be able to:
 
 ![](./screenshot-desktop.png)
 ![](./screenshot-desktop-active.png)
+![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-news-homepage-using-css-grids-and-flexboxes-pwOhovhwl5)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/news-homepage/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-pricing-component-with-toggle-button-6RH7i478QO)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/pricing-component-with-toggle/)
 
 ## My process
 
