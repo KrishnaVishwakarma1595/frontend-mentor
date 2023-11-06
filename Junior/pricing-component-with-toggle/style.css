@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root{
+    /* NEUTRAL */
+    --white: #ffffff; 
+    --very-light-grayish-blue: #F7F7FE;
+	--light-grayish-blue: #b3b5c6;
+	--grayish-blue: #6E728E;
+	--dark-grayish-blue: #4A4D60;
+	--purple: #6D72DE;
+	--gradient: linear-gradient(to right, rgba(163, 168, 240, 1), rgba(105, 111, 221, 1));
+    /* FONTS */    
+    --ff-Montserrat: 'Montserrat', sans-serif;
+}
+
+/* Modern CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+	min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+	scroll-margin-block: 5ex;
+}
+
+/*  */
+
+body{
+    background-color: var(--very-light-grayish-blue);
+    color: var(--grayish-blue);
+    font-family: var(--ff-Montserrat);    
+    position: relative;    
+    transition: all 0.3s linear;
+}
+
+body::before{
+	content: '';	
+	position: absolute;
+    background: url(./images/bg-bottom.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    bottom: 0;
+}
+
+body::after{
+	content: '';
+	position: absolute;
+	background: url(./images/bg-top.svg);
+    background-repeat: no-repeat;
+    width: 375px;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--grayish-blue);
+    font-weight: 300;    
+    margin-top: 50px;
+}
+
+.attribution a{
+    color: var(--dark-grayish-blue);
+}
+
+#pcwt_header, #pcwt_main{ position: relative; z-index: 1; }
+
+#pcwt_header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 40px;
+	padding: 70px 0px 60px 0px;
+}
+
+#pcwt_header h1{
+	color: var(--grayish-blue);
+	text-align: center;
+	font-family: var(--ff-Montserrat);
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.plan_switcher{
+	display: flex;
+	column-gap: 24px;
+	align-items: center;
+}
+
+.plan_switcher span{
+	color: var(--light-grayish-blue);
+	text-align: right;
+	font-family: var(--ff-Montserrat);
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+}
+
+.switcher{
+	width: 56px;
+	height: 32px;
+	background: var(--gradient);
+	border-radius: 16px;
+	padding: 3.5px 4px;
+	cursor: pointer;
+	transition: all .3s linear;
+}
+
+.switcher:is(:hover){
+	background: linear-gradient(to right, rgba(163, 168, 240, 0.5), rgba(105, 111, 221, 0.5));
+}
+
+.switcher_circle{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: var(--white);
+	transition: all .3s linear;
+	transform: translateX(23px);
+}
+
+#pcwt_main{
+	display: grid;
+	grid-template-columns: repeat(3, 350px);
+	justify-content: center;
+}
+
+.plan_card{
+	border-radius: 10px 0px 0px 10px;
+	background: var(--white);
+	box-shadow: 0px 20px 40px 0px rgba(212, 210, 244, 0.50);
+	padding: 31px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--grayish-blue);
+	align-self: baseline;
+}
+
+.plan_card.plan_middle{
+	border-radius: 10px;
+	background: linear-gradient(135deg, #A2A7F0 -0.05%, #696EDD 100.05%);	
+}
+
+.plan_name{
+	text-align: center;
+	font-family: var(--ff-Montserrat);
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	display: block;
+	margin-bottom: 24px;
+}
+
+.plan_cost{
+	font-family: var(--ff-Montserrat);
+	font-size: 72px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 71px;
+	letter-spacing: -2.16px;
+	display: flex;
+	align-items: center;
+	column-gap: 8px;
+}
+
+.plan_cost span{
+	text-align: center;
+	font-family: var(--ff-Montserrat);
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: -1.2px;
+}
+
+.plan_card .plan_cost{
+	color: var(--dark-grayish-blue);
+}
+
+#pcwt_main[data-value="monthly"] .plan_annually,
+#pcwt_main[data-value="annually"] .plan_monthly{ 
+	display: none;
+}
+
+.plan_rewards{
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin: 32px 0px;
+}
+
+.plan_reward_item{
+	text-align: center;
+	font-family: var(--ff-Montserrat);
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	padding: 12px 0;
+	border-top: 1px solid rgba(110, 114, 142, 0.25);
+	width: 100%;
+}
+
+.plan_rewards .plan_reward_item:nth-child(3){
+	border-bottom: 1px solid rgba(110, 114, 142, 0.25);
+}
+
+.plan_cta{
+	width: 100%;
+	height: 44px;
+	border: 1px solid transparent;
+	border-radius: 6px;
+	background: linear-gradient(135deg, #A2A7F0 0%, #696EDD 100%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--white);
+	text-align: center;
+	font-family: var(--ff-Montserrat);
+	font-size: 13px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 1.393px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: all 0.3s linear;
+}
+
+.plan_cta:is(:hover, :active){
+	background: transparent;
+	border-color: var(--purple);
+	color: var(--purple);
+}
+
+.plan_middle .plan_cta{
+	background: var(--white) !important;
+	color: var(--purple) !important;
+}
+
+.plan_middle .plan_name, .plan_middle .plan_reward_item,
+.plan_middle .plan_cost{
+	color: var(--white);
+}
+
+.plan_middle{ height: 500px; }
+
+.plan_middle .plan_cta:is(:hover, :active){
+	background: transparent !important;
+	color: var(--white) !important;
+	border-color: var(--white) !important;
+}
+
+@media screen and (max-width: 1023px){
+	#pcwt_main{
+		grid-template-columns: repeat(2, 350px);
+		gap: 31px;
+	}
+	.plan_card{ border-radius: 10px; }
+	.plan_middle{ height: auto; }
+	#pcwt_main .plan_card:nth-child(3){
+		grid-column: span 2;
+		margin: 0 auto;
+		width: 350px;
+	}
+}
+
+@media screen and (max-width: 767px){
+	body::after{
+		width: 180px;
+	}
+	#pcwt_main{
+		grid-template-columns: 1fr;
+		padding: 0px 24px;
+	}
+	#pcwt_main .plan_card:nth-child(3){
+		grid-column: auto;
+		width: 100%;
+	}
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+		<title>Frontend Mentor | Pricing component with toggle solution</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">	
+	</head>
+
+	<body>
+		<header id="pcwt_header">
+			<h1>Our Pricing</h1>
+			<div class="plan_switcher">
+				<span>Annually</span>
+				<div class="switcher">
+					<div class="switcher_circle"></div>
+				</div>
+				<span>Monthly</span>
+			</div>						
+		</header>
+		<main id="pcwt_main" data-value="monthly">
+			<div class="plan_card">
+				<span class="plan_name">Basic</span>
+				<h2 class="plan_cost plan_monthly"><span>&dollar;</span>19.99</h2>
+				<h2 class="plan_cost plan_annually"><span>&dollar;</span>199.99</h2>
+				<ul class="plan_rewards">
+					<li class="plan_reward_item">500 GB Storage</li>
+					<li class="plan_reward_item">2 Users Allowed</li>
+					<li class="plan_reward_item">Send up to 3 GB</li>
+				</ul>
+				<button class="plan_cta">Learn More</button>
+			</div>
+			<div class="plan_card plan_middle">
+				<span class="plan_name">Professional</span>
+				<h2 class="plan_cost plan_monthly"><span>&dollar;</span>24.99</h2>
+				<h2 class="plan_cost plan_annually"><span>&dollar;</span>249.99</h2>
+				<ul class="plan_rewards">
+					<li class="plan_reward_item">1 TB Storage</li>
+					<li class="plan_reward_item">5 Users Allowed</li>
+					<li class="plan_reward_item">Send up to 10 GB</li>
+				</ul>
+				<button class="plan_cta">Learn More</button>
+			</div>
+			<div class="plan_card">
+				<span class="plan_name">Master</span>
+				<h2 class="plan_cost plan_monthly"><span>&dollar;</span>39.99</h2>
+				<h2 class="plan_cost plan_annually"><span>&dollar;</span>399.99</h2>
+				<ul class="plan_rewards">
+					<li class="plan_reward_item">2 TB Storage</li>
+					<li class="plan_reward_item">10 Users Allowed</li>
+					<li class="plan_reward_item">Send up to 20 GB</li>
+				</ul>
+				<button class="plan_cta">Learn More</button>
+			</div>
+		</main>
+
+		<footer class="attribution animate__animated animate__fadeIn mb-3">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+			Developed by 
+			<a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+			aria-label="Developer - Krishna Vishwakarma">
+				<img src="../../assets/kv-footer.png" style="width: 130px;margin: 6px auto;" alt="Developer - Krishna Vishwakarma" />
+			</a>			
+        </footer>
+
+		<script>
+			document.querySelector('.switcher').addEventListener('click', () => {
+				const elem = document.getElementById('pcwt_main');
+				if(elem.dataset.value === "monthly"){
+					elem.dataset.value = "annually";
+					document.querySelector('.switcher_circle').style.transform = 'translateX(0)';
+				}else{
+					elem.dataset.value = "monthly";
+					document.querySelector('.switcher_circle').style.transform = 'translateX(23px)';
+				}
+			})
+		</script>
+	</body>
+
+</html>
