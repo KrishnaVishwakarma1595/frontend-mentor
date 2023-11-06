@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- displays site properly based on user's device -->
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Project tracking intro component</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="style.css">	
+</head>
+
+<body>
+	<header id="ptic_header">
+		<img src="./images/logo.svg" alt="logo" class="logo" />
+		<nav class="ptic_desktop_menu">
+			<ul class="ptic_desktop_menu_list">
+				<li class="ptic_desktop_menu_list_item">
+					<a href="#" target="_blank" rel="noopener noreferrer">
+						Product
+					</a>
+				</li>
+				<li class="ptic_desktop_menu_list_item">
+					<a href="#" target="_blank" rel="noopener noreferrer">
+						Features
+					</a>
+				</li>
+				<li class="ptic_desktop_menu_list_item">
+					<a href="#" target="_blank" rel="noopener noreferrer">
+						Pricing
+					</a>
+				</li>
+				<li class="ptic_desktop_menu_list_item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none">
+						<circle opacity="0.15" cx="3" cy="3.57087" r="3" fill="#242942"/>
+					</svg>
+				</li>
+				<li class="ptic_desktop_menu_list_item">
+					<a href="#" target="_blank" rel="noopener noreferrer">Login</a>
+				</li>					
+			</ul>
+		</nav>
+		<img src="./images/icon-hamburger.svg" alt="" class="menu_icon" />
+		<nav class="ptic_mobile_menu">
+			<ul class="ptic_mobile_menu_list animate__animated animate__fadeIn">
+				<li class="ptic_desktop_menu_list_item">
+					<a href="#" target="_blank" rel="noopener noreferrer">
+						Product
+					</a>
+				</li>
+				<li class="ptic_desktop_menu_list_item">
+					<a href="#" target="_blank" rel="noopener noreferrer">
+						Features
+					</a>
+				</li>
+				<li class="ptic_desktop_menu_list_item">
+					<a href="#" target="_blank" rel="noopener noreferrer">
+						Pricing
+					</a>
+				</li>
+				<li class="ptic_desktop_menu_list_item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="6" height="7" viewBox="0 0 6 7" fill="none">
+						<circle opacity="0.15" cx="3" cy="3.57087" r="3" fill="#242942"/>
+					</svg>
+				</li>
+				<li class="ptic_desktop_menu_list_item">
+					<a href="#" target="_blank" rel="noopener noreferrer">Login</a>
+				</li>					
+			</ul>
+		</nav>
+		
+	</header>
+	<main id="ptic_main">
+		<div class="main_content">
+			<div style="display: flex;align-items: center;">
+				<span class="new_highlight">New</span>
+				<span class="short_text">Monograph Dashboard</span>
+			</div>
+			<h1>Powerful insights into your team</h1>
+			<p>
+				Project planning and time tracking for agile teams
+			</p>
+			<div class="cta_action">
+				<button class="demo_cta">
+					Schedule a demo
+				</button>
+				<button class="preview_cta">
+					to see a preview
+				</button>
+			</div>
+		</div>
+		<div class="abs__content_illustration">
+			<img src="./images/illustration-devices.svg" alt="Illustration Device" class="illustration" />
+		</div>	
+	</main>
+	<footer class="attribution animate__animated animate__fadeIn mb-3">
+		Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+		Developed by 
+		<a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+		aria-label="Developer - Krishna Vishwakarma">
+			<img src="../../assets/kv-footer.png" style="width: 130px;margin: 6px auto;" alt="Developer - Krishna Vishwakarma" />
+		</a>			
+	</footer>
+
+	<script>
+		document.querySelector('.menu_icon').addEventListener('click', (e) => {
+			if(document.querySelector('.ptic_mobile_menu').classList.contains('d-block')){
+				e.target.src = './images/icon-hamburger.svg';
+			}else{
+				e.target.src = './images/icon-close.svg';	
+			}
+			document.querySelector('.ptic_mobile_menu').classList.toggle('d-block');
+		})
+	</script>
+
+</body>
+
+</html>
