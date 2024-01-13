@@ -26,14 +26,14 @@ Users should be able to:
 
 ### Screenshots
 
-![](./screenshot-desktop-view.png)
+![](./screenshot-default-view.png)
 ![](./screenshot-hover-state.png)
 ![](./screenshot-mobile-view.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-blog-preview-card-M8t8R4o64s)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/blog-preview-card/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-faq-accordion-solution-SGCDR07emx)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/faq-accordion/)
 
 ## My process
 
