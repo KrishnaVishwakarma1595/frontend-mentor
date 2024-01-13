@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+@font-face {
+    font-family: WorkSans-Regular;
+    src: url(./assets/fonts/static/WorkSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: WorkSans-Semibold;
+    src: url(./assets/fonts/static/WorkSans-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: WorkSans-ExtraBold;
+    src: url(./assets/fonts/static/WorkSans-Bold.ttf);
+    font-weight: 700;
+}
+
+:root{
+    /* PRIMARY COLORS */
+    --white: hsl(0, 0%, 100%);
+    --light-pink: #F8EEFF;
+    --grayish-purple: #AD28EB;
+    --dark-purple: #301534;
+    --pale-purple: #8B6990;
+    /* FONTS */    
+    --ff-workSans-regular: WorkSans-Regular, sans-serif;
+    --ff-workSans-semibold: WorkSans-SemiBold, sans-serif;
+    --ff-workSans-extraBold: WorkSans-ExtraBold, sans-serif;
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background: var(--light-pink) url(./assets/images/background-pattern-desktop.svg) no-repeat;
+    font-family: var(--ff-workSans-regular);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;         
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.d-flex{
+    display: flex;
+    flex-direction: row;
+}
+
+.d-inline-block{ display: inline-block; }
+.flex-column { flex-direction: column; }
+.justify-content-between { justify-content: space-between; }
+.align-items-center{ align-items: center;}
+
+.attribution{    
+    position: fixed;
+    bottom: 10px;    
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    color: var(--black);
+    font-family: var(--ff-figtree-semibold);
+    font-weight: 600;
+    font-size: 16px;
+    z-index: 1;
+}
+
+.attribution a{
+    color: var(--black);
+    font-weight: 600;
+}
+
+.faq_container{
+    display: flex;
+    width: 600px;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 16px;
+    background: var(--white);
+    box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.10);
+}
+
+.icon_star{ width: 40px; height: 40px; }
+
+h1{
+    color: var(--dark-purple);    
+    font-family: var(--ff-workSans-extraBold);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+
+ul > li:not(:last-child){
+    border-bottom: 1px solid var(--light-pink);
+}
+
+details{
+    padding: 24px 12px 24px 0px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+details>summary {
+    list-style: none;
+    position: relative;
+    color: var(--dark-purple);
+    font-family: var(--ff-workSans-semibold);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: all 0.3s linear;
+}
+
+details>summary:hover{
+    color: var(--grayish-purple);
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+details>p{
+    margin-top: 24px;
+    color: var(--pale-purple);
+    font-family: var(--ff-workSans-regular);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+summary::after {
+    content: "";
+    background-image: url(./assets/images/icon-plus.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right;
+    right: 0;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: -4px;
+}
+
+details[open] summary:after {
+    content: "";
+    background-image: url(./assets/images/icon-minus.svg);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: right;
+    transform: rotate(180deg);
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .attribution{ position: relative; }
+    .faq_container{
+        margin-top: 140px;
+    }
+    .icon_star{ width: 24px; height: 24px; }
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background: var(--light-pink) url(./assets/images/background-pattern-mobile.svg) no-repeat;
+        background-size: contain;
+    }
+    .faq_container{
+        width: 327px;
+        padding: 24px;
+        gap: 0;
+    }
+    h1{ font-size: 32px; }
+    details>summary{ font-size: 16px; padding-right: 24px; }
+    details>p{ font-size: 14px; }
+    summary::after, details[open] summary:after {
+        right: -14px;
+    }
+}
