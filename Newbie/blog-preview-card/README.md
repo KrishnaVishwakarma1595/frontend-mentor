@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-faq-accordion-card-pGZLp4uYti)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/faq-accordion-card/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-blog-preview-card-M8t8R4o64s)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/blog-preview-card/)
 
 ## My process
 
