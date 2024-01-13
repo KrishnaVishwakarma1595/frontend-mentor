@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+		<title>Frontend Mentor | Blog preview card</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<main class="card_container slideUp">
+			<picture>
+				<source media="(min-width: 768px)" srcset="./assets/images/illustration-article.svg">
+				<img class="animate__animated animate__fadeIn" src="./assets/images/illustration-article.svg" 
+				alt="Illustration article" style="border-radius: 10px;">
+			</picture>
+			<div class="animate__animated animate__fadeIn middle-container">
+				<span class="learn-tag slideUp">Learning</span>				
+				<span class="publishment slideUp">Published 21 Dec 2023</span>
+				<h1 class="slideUp">HTML & CSS foundations</h1>
+				<p class="slideUp">
+					These languages are the backbone of every website, defining structure, content, and presentation.
+				</p>
+			</div>
+			<div class="d-flex align-items-center animate__animated animate__fadeInUp" style="column-gap: 12px;">
+				<picture>
+					<source media="(min-width: 768px)" srcset="./assets/images/image-avatar.webp">
+					<img src="./assets/images/image-avatar.webp" 
+					alt="" style="width: 32px;height: 32px;" class="slideUp">
+				</picture>
+				<span class="slideUp person_name">Greg Hooper</span>
+			</div>
+		</main>
+		<footer class="attribution slideUp">            
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+            Coded by <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.
+        </footer>	
+		<!-- For Production -->
+        <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+		<script>
+			ScrollReveal().reveal(".slideUp", {
+				delay: 200,
+				easing: "ease-out",
+				interval: 200,
+				reset: true,
+				distance: "10%",
+				opacity: 0,
+				origin: "bottom",
+			})
+		</script>	
+	</body>
+</html>
