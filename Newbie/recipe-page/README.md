@@ -16,13 +16,14 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Screenshot
 
+![](./assets/images/screenshot-full-page.png)
 ![](./assets/images/screenshot-desktop.png)
 ![](./assets/images/screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-social-links-profile-component-WhVn3D3wwL)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/social-links-profile/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-recipe-page-solution-PRv1pJWnV1)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/recipe-page/)
 
 ## My process
 
