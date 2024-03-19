@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root{
+    /* COLORS */
+    --white: hsl(0, 0%, 100%);
+    --green: hsl(75, 94%, 57%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+    /* FONTS */
+    --ff-inter: "Inter", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-variation-settings: "slnt" 0;    
+}
+
+html, body{ min-height: 100vh; }
+
+body{
+    background: var(--off-black);
+    color: var(--white); 
+    display: grid;
+    place-items: center; 
+    padding-top: 50px;
+}
+
+button{ 
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+svg, path{
+    transition: all 0.3s linear;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--white);
+    font-weight: 300;    
+    margin-top: 30px;
+}
+
+.attribution a{ color: var(--green); }
+
+main{
+    width: 384px;
+    padding: 40px;
+    background: var(--dark-grey);
+    border-radius: 12px;
+}
+
+img{
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+}
+
+h1{
+    font-size: 24px;
+    font-family: var(--ff-inter);
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 8px;
+}
+
+p, span{
+    font-size: 14px;
+    font-family: var(--ff-inter);
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+span{ 
+    color: var(--green);
+    font-weight: 600;
+}
+
+.social_links{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 16px;
+}
+
+.social_links > a{
+    background-color: var(--grey);
+    text-align: center;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    color: var(--white);
+    text-decoration: none;
+    font-family: var(--ff-inter);
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.social_links > a:is(:hover) {
+    background: var(--green);
+    color: var(--grey);
+}
+
+@media screen and (max-width: 420px){   
+    body{
+        padding: 24px;
+    }
+    main{ width: 100%; padding: 24px; }
+    h1{ font-size: 20px; }
+    p, span, .social_links > a{
+        font-size: 12px;
+    }
+}
