@@ -23,12 +23,14 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./assets/images/screenshot-desktop.png)
+![](./assets/images/screenshot-desktop-active.png)
+![](./assets/images/screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live URL](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-social-links-profile-component-WhVn3D3wwL)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/social-links-profile/)
 
 ## My process
 
