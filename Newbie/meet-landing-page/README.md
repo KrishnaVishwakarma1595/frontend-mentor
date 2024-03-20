@@ -24,14 +24,15 @@ Users should be able to:
 
 ### Screenshot
 
-![](./assets/images/screenshot-full-page.png)
-![](./assets/images/screenshot-desktop.png)
-![](./assets/images/screenshot-mobile.png)
+![](./assets/screenshot-full.png)
+![](./assets/screenshot-desktop-view.png)
+![](./assets/screenshot-tablet-view.png)
+![](./assets/screenshot-mobile-view.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-recipe-page-solution-PRv1pJWnV1)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/recipe-page/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-meet-landing-page-solution-BrTvBJ9bim)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/meet-landing-page/)
 
 ## My process
 
