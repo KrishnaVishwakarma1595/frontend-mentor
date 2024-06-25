@@ -24,15 +24,13 @@ Users is be able to:
 
 ### Screenshot
 
-![](./assets/screenshot-full.png)
-![](./assets/screenshot-desktop-view.png)
-![](./assets/screenshot-tablet-view.png)
-![](./assets/screenshot-mobile-view.png)
+![](./screenshot-workit-desktop.png)
+![](./screenshot-workit-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-meet-landing-page-solution-BrTvBJ9bim)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/meet-landing-page/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-workit-landing-page-sc1wFahZJD)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/workit-landing-page/)
 
 ## My process
 
