@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+@font-face {
+    font-family: Fraunces;
+    src: url('./assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url('./assets/fonts/manrope/Manrope-VariableFont_wght.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url('./assets/fonts/manrope/static/Manrope-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url('./assets/fonts/manrope/Manrope-VariableFont_wght.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url('./assets/fonts/manrope/Manrope-VariableFont_wght.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url('./assets/fonts/manrope/static/Manrope-Regular.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Manrope;
+    src: url('./assets/fonts/manrope/static/Manrope-Regular.ttf');
+    font-weight: 800;
+}
+
+:root{   
+    --dark-purple: #24053E;
+    --cyan: #44FFA1;
+    --grey: #584D62;
+    --ghost-white: #FCF8FF;
+    --white: #FFFFFF;
+    /* FONTS */        
+    --ff-fraunces: Fraunces, sans-serif;
+    --ff-manrope: Manrope, sans-serif;
+}
+
+/* Modern CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+	min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+	scroll-margin-block: 5ex;
+}
+
+/*  */
+
+.d-none{ display: none; }
+.d-flex{ display: flex; }
+.text-center{ text-align: center; }
+.flex-column{ flex-direction: column; }
+.flex-wrap{ flex-wrap: wrap; }
+.justify-content-between{ justify-content: space-between; }
+.justify-content-center{ justify-content: center; }
+.justify-content-start{ justify-content: flex-start; }
+.justify-content-end{ justify-content: flex-end; }
+.align-items-center{ align-items: center; }
+.align-items-start{ align-items: flex-start; }
+.align-items-end{ align-items: flex-end; }
+
+body{
+    background: var(--white);    
+    color: var(--dark-purple);
+    font-family: var(--ff-manrope);    
+    position: relative;    
+    transition: all 0.3s linear;
+    overflow-x: hidden;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--dark-purple);
+    font-weight: 300;    
+    margin: 30px 0px;
+}
+
+.attribution a{ color: var(--grey); font-weight: 500; }
+
+header{
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    padding: 56px 165px;
+}
+
+.applyBtn{
+    font-family: var(--ff-manrope);
+    font-size: 18px;
+    color: var(--white);
+    line-height: 32px;
+    font-weight: 500;
+    position: relative;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+
+.applyBtn:is(:hover){
+    color: var(--cyan);
+}
+
+.applyBtn::after, h1 span::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -8px;
+    left: 0;
+    background-color: var(--cyan);
+}
+
+.topHeroSection{
+    display: flex;
+    height: 100vh;
+    padding-top: 146px;
+    background: var(--ghost-white) url(./assets/images/bg-pattern-4.svg) no-repeat;
+    position: relative;
+    background-position: bottom;
+}
+
+.topHeroSection::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    top: 116px;
+    left: -160px;
+    background: url(./assets/images/bg-pattern-1.svg) no-repeat;
+}
+
+.topHeroSection::after{
+    content: '';
+    position: absolute;
+    width: 141px;
+    height: inherit;
+    top: 314px;
+    right: 0px;
+    background: url(./assets/images/bg-pattern-2.svg) no-repeat;
+}
+
+.topSection{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    justify-content: flex-start;
+    align-items: center;
+    width: 675px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1{
+    font-family: var(--ff-fraunces);
+    font-size: 80px;
+    line-height: normal;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
+}
+
+h1 span{
+    position: relative;
+}
+
+h1 span::after{
+    bottom: 4px;
+}
+
+.topSection img{
+    position: absolute;
+    bottom: -150px;
+    left: 50px;
+}
+
+.actionCta{
+    background-color: var(--cyan);
+    padding: 12px 24px;
+    color: var(--dark-purple);
+    border: 1px solid var(--cyan);
+    transition: all .3s linear;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: var(--ff-manrope);
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.18px;
+    width: 161px;
+    height: 61px;
+}
+
+.actionCta:is(:hover){
+    background-color: transparent;
+    color: var(--cyan);
+}
+
+.secondSection{
+    background: url(./assets/images/bg-pattern-5.svg) no-repeat;
+    background-position: bottom;
+    padding-top: 255px;
+}
+
+.insights{
+    display: grid;
+    grid-template-columns: repeat(3, 354px);
+    gap: 26px;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+    text-align: center;    
+    padding-bottom: 171px;
+}
+
+.insight{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    align-items: center;
+}
+
+.insight span{
+    display: flex;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid var(--grey);
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: var(--ff-fraunces);
+    line-height: 40px;
+    color: var(--dark-purple);
+}
+
+.insight h2{
+    font-size: 32px;
+    font-weight: 600;
+    font-family: var(--ff-fraunces);
+    line-height: 40px;
+    margin-top: 18px;
+    color: var(--dark-purple);
+}
+
+.insight p{
+    font-size: 18px;
+    font-weight: 200;
+    font-family: var(--ff-manrope);
+    line-height: 32px;
+    color: var(--dark-purple);
+}
+
+.thirdSection{
+    display: flex;
+    justify-content: flex-end;
+    padding: 110px 165px 60px 165px;   
+    position: relative;
+    margin-top: 170px;
+}
+
+.founderImage{
+    width: 477px;
+    left: 150px;
+    top: -70px;
+    position: absolute;
+    z-index: -1;
+}
+
+.founderInfo{
+    width: 730px;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    background-color: var(--dark-purple);   
+    align-self: flex-end;
+    /* position: relative;
+    z-index: 1; */
+}
+
+.founderInfo h3{
+    font-size: 56px;
+    font-family: var(--ff-fraunces);
+    font-weight: 600;
+    line-height: 64px;
+    color: var(--white);
+}
+
+.founderInfo p{
+    font-size: 18px;
+    font-family: var(--ff-manrope);
+    font-weight: 300;
+    line-height: 32px;
+    color: var(--white);
+}
+
+.founderInfo::after{
+    content: '';
+    position: absolute;
+    width: 203px;
+    right: 242px;
+    height: 195px;
+    bottom: 18px;
+    background: url(./assets/images/bg-pattern-3.svg) no-repeat;
+}
+
+.workItFooter{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 57px;
+}
+
+.workItFooter li{ cursor: pointer; }
+
+.workItFooter svg:is(:hover) path{
+    fill: var(--dark-purple);
+}
+
+@media screen and (max-width: 1366px){
+    .thirdSection{
+        padding: 110px 65px 60px 65px;
+    }
+    .topSection img{ bottom: -190px; }
+}
+
+@media screen and (max-width: 1265px){
+    .founderImage{ left: 50px; }
+}
+
+@media screen and (max-width: 1145px){
+    header{
+        padding: 32px 40px;
+    }
+    .actionCta, .insight p{ font-size: 16px; }
+    .founderImage{
+        width: 280px;
+        left: 150px;
+    }
+    .founderInfo{        
+        padding: 48px 56px 56px 56px;
+    }
+    .secondSection{ padding-bottom: 100px; }
+    h1{
+        font-size: 60px;
+    }
+    .insights{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+        padding: 0px 65px;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .insight{ flex-direction: row; gap: 32px; }    
+    .insight div{ gap: 16px; }    
+    .insight h2{
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .thirdSection{
+        padding: 110px 40px 60px 40px;
+    }
+    .topSection img { 
+        width: 514px; 
+        bottom: -130px;
+        left: 120px;
+    }
+    .founderInfo{ width: 514px; }
+    .secondSection{ padding-top: 180px; }
+    .insights{ padding: 0px 40px; }
+    .founderInfo::after{ right: 82px; }
+}
+
+@media screen and (max-width: 768px){
+    .founderInfo::after, .topHeroSection::after, .topHeroSection::before{
+        display: none;
+        content: '';
+    }
+    .founderInfo{ width: 100%; text-align: center; }
+    .founderImage{ 
+        left: 50%;
+        transform: translate(-50%, -20%);
+    }
+    .founderInfo .actionCta{ margin: 0 auto; }
+    .thirdSection{ padding: 110px 0px 0px 0px; }
+    .insights{ padding: 0 20px; }
+    .insight{ flex-direction: column; }
+    .insight div{
+        align-items: center;
+        text-align: center;
+    }
+    .topSection img{ left: 50px; }
+}
+
+@media screen and (max-width: 545px){
+    .topSection img{ 
+        width: 320px;
+        left: 50%;
+        transform: translate(-50%, 50%); 
+    }
+    header{
+        padding: 32px 16px;
+    }
+    .topHeroSection{ height: auto; padding-bottom: 130px; }
+    h1{ font-size: 40px; }
+    .secondSection{ background-color: var(--ghost-white); }
+    .founderInfo{ padding: 32px; }
+    .founderInfo h3{ font-size: 32px; }
+    .founderInfo p{ font-size: 16px; }
+}
