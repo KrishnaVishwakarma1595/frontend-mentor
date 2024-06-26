@@ -24,13 +24,13 @@ Users is able to:
 
 ### Screenshot
 
-![](./screenshot-workit-desktop.png)
-![](./screenshot-workit-mobile.png)
+![](./screenshot-desktop.png)
+![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-workit-landing-page-sc1wFahZJD)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/workit-landing-page/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-skilled-e-learning-landing-page-solution-RZ-Id6ySmF)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/skilled-elearning-landing-page/)
 
 ## My process
 
