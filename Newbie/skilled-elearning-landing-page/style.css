@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{   
+    --bluish: #666CA3;
+    --blackish: #13183F;
+    --grey: #83869A;
+    --dark-pink: #F74780;
+    --light-pink: #FFA7C3;
+    --white: #FFFFFF;
+    --gradient-1: linear-gradient(180deg, rgba(255,111,72,1) 0%, rgba(240,42,166,1) 100%);
+    --gradient-2: linear-gradient(180deg, rgba(72,81,255,1) 0%, rgba(240,42,166,1) 100%);
+    --gradient-3: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    /* FONTS */        
+    --ff-jakarta-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Modern CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+	min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+	scroll-margin-block: 5ex;
+}
+
+/*  */
+
+.d-none{ display: none; }
+.d-flex{ display: flex; }
+.text-center{ text-align: center; }
+.flex-column{ flex-direction: column; }
+.flex-wrap{ flex-wrap: wrap; }
+.justify-content-between{ justify-content: space-between; }
+.justify-content-center{ justify-content: center; }
+.justify-content-start{ justify-content: flex-start; }
+.justify-content-end{ justify-content: flex-end; }
+.align-items-center{ align-items: center; }
+.align-items-start{ align-items: flex-start; }
+.align-items-end{ align-items: flex-end; }
+
+body{
+    background: var(--gradient-3);    
+    color: var(--grey);
+    font-family: var(--ff-jakarta-sans);    
+    position: relative;    
+    transition: all 0.3s linear;
+    overflow-x: hidden;
+    font-optical-sizing: auto;    
+    font-style: normal;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--white);
+    font-weight: 300;        
+}
+
+.attribution a{ color: var(--white); font-weight: 500; }
+
+.actionCta{
+    width: 167px;
+    height: 56px;
+    color: var(--white);
+    transition: all 0.3s linear;    
+    font-family: var(--ff-jakarta-sans);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 28px;
+    cursor: pointer;
+    border-radius: 28px;
+    border: none;
+    position: relative;
+}
+
+.primaryButton{
+    background-color: var(--blackish);    
+}
+
+.primaryButton:is(:hover){
+    background-color: var(--bluish);
+}
+
+.gradientButton:hover::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: var(--white);
+    opacity: 0.5;
+    border-radius: 30px;
+}
+
+.gradientButtonLight{
+    background: var(--gradient-1);
+}
+
+.gradientButtonDark{
+    background: var(--gradient-2);
+}
+
+header{ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 38px 165px;
+    z-index: 1;
+}
+
+.heroSection{
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;    
+    padding: 0px 165px;
+    /* background: url(./assets/image-hero-desktop.png) no-repeat;
+    background-position: top right; */
+}
+
+.heroSection div{
+    display: flex;
+    flex-direction: column;
+    width: 458px;    
+}
+
+h1{
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 70px;
+    color: var(--blackish);
+    margin-bottom: 28px;
+}
+
+.heroSection div p{
+    font-size: 18px;
+    color: var(--grey);
+    font-weight: 500;
+    line-height: 28px;
+    margin-bottom: 40px;
+}
+
+.heroSection img{
+    position: absolute;
+    right: -335.63px;
+    top: -146px;
+}
+
+.allCourses{    
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    gap: 80px 30px;
+    place-content: center;
+    /* background: var(--gradient-3); */
+    padding: 140px 165px;
+}
+
+.courseCard{
+    background: var(--white);
+    border-radius: 16px;
+    padding: 64px 32px 40px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    cursor: pointer;
+    gap: 24px;
+    transition: all 0.3s linear;
+    box-shadow: 0px 25px 50px 0px rgba(6,22,141,4.42%);
+    border: 1px solid var(--grey);
+}
+
+.courseCard:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 25px 50px 0px rgba(6,22,141,8.42%);
+}
+
+.gradientBox{ background: var(--gradient-1); border: none; }
+
+.gradientBox h2{
+    font-size: 32px;
+    color: var(--white);
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.courseCard span{    
+    display: inline-block;
+    position: absolute;
+    top: -32px;
+    left: 32px;
+}
+
+.courseCard h3{
+    font-size: 24px;
+    color: var(--blackish);
+    line-height: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.courseCard p{
+    font-size: 18px;
+    color: var(--grey);
+    line-height: 28px;
+    font-weight: 500;    
+}
+
+.courseCard button{
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    align-self: flex-start;
+}
+
+.courseCard button:hover{
+    opacity: 0.7;
+}
+
+.skilledFooter{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--blackish);
+    padding: 32px 165px;
+}
+
+@media screen and (max-width: 1440px){
+    header, .heroSection, .allCourses, .skilledFooter {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+}
+
+@media screen and (max-width: 1130px){
+    .allCourses{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 56px 11px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .heroSection img {        
+        right: -201.63px;
+        top: -92px;
+    }
+    .heroSection div{ width: 339px; }
+    h1{ font-size: 40px; line-height: 51px; }
+    .heroSection div p, .courseCard p{ font-size: 16px; }
+    .gradientBox h2{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .courseCard h3{ font-size: 20px; line-height: 28px; }
+    .actionCta{ font-size: 16px; line-height: 26px; }
+}
+
+@media screen and (max-width: 840px){
+    .heroSection img{
+        position: relative;
+        right: unset;
+        top: unset;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header, .heroSection, .allCourses, .skilledFooter {
+        padding: 16px;
+    }
+    .allCourses{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .gradientBox{
+        padding: 24px 32px;
+    }
+    .heroSection{
+        padding-top: 100px;
+        height: auto;
+        flex-direction: column;
+    }
+    .heroSection div{ width: 100%; }
+    .actionCta{ width: 140px; height: 48px; }   
+}
