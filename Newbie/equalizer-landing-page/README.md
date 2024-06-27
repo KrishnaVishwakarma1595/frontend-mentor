@@ -43,8 +43,8 @@ Users is able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-skilled-e-learning-landing-page-solution-RZ-Id6ySmF)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/skilled-elearning-landing-page/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-equalizer-landing-page-solution-1Zjh_CJmgq)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/equalizer-landing-page/)
 
 ## My process
 
