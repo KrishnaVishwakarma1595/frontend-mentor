@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root{   
+    --cyan: #66E2DC;
+    --orange: #FA7453;
+    --yellow-gold: #FFB964;
+    --off-white: #FCFAF9;
+    --off-black: #191826;
+    /* FONTS */        
+    --ff-plex-sans: "IBM Plex Sans", sans-serif;
+}
+
+/* Modern CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+	min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+	scroll-margin-block: 5ex;
+}
+
+/*  */
+
+.d-none{ display: none; }
+.d-flex{ display: flex; }
+.text-center{ text-align: center; }
+.flex-column{ flex-direction: column; }
+.flex-wrap{ flex-wrap: wrap; }
+.justify-content-between{ justify-content: space-between; }
+.justify-content-center{ justify-content: center; }
+.justify-content-start{ justify-content: flex-start; }
+.justify-content-end{ justify-content: flex-end; }
+.align-items-center{ align-items: center; }
+.align-items-start{ align-items: flex-start; }
+.align-items-end{ align-items: flex-end; }
+
+body{
+    background: var(--off-white) url(./assets/bg-main-desktop.png) no-repeat;
+    background-position-x: center;
+    background-position-y: -221px;    
+    color: var(--off-black);
+    font-family: var(--ff-plex-sans);    
+    position: relative;    
+    transition: all 0.3s linear;
+    overflow-x: hidden;
+    font-optical-sizing: auto;    
+    font-style: normal;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--off-black);
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.attribution a{ color: var(--off-black); font-weight: 500; }
+
+.offWhiteText{ color: var(--off-white); }
+.offBlackText{ color: var(--off-black); }
+
+.actionCta{
+    padding: 15px 95px;        
+    transition: all 0.3s linear;    
+    font-family: var(--ff-plex-sans);
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    gap: 7.92px;
+}
+
+.iosButton{
+    background-color: var(--off-black);    
+    margin-bottom: 16px;
+}
+
+.iosButton:is(:hover){
+    background-color: var(--cyan);
+}
+
+.androidButton{
+    background-color: var(--off-white);    
+}
+
+.androidButton:is(:hover){
+    background-color: var(--yellow-gold);
+}
+
+header{     
+    width: 100%;
+    padding: 60px 165px 0px;
+    z-index: 1;
+}
+
+.heroSection{
+    padding: 127px 165px 0px 165px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.heroSection h1{
+    font-size: 88px;
+    font-weight: 700;
+    color: var(--off-black);
+    z-index: 1;
+    margin-bottom: 40px;
+}
+
+.heroSection p{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    color: var(--off-black);
+    padding-right: 260px;
+}
+
+.heroSection img{
+    position: absolute;
+    width: 312px;
+    top: -50px;
+    right: 0;
+}
+
+.illustrationSection{
+    width: auto;
+    height: 600px;
+    border-radius: 12px;
+    background: var(--off-black) url(./assets/bg-pattern-2.svg) no-repeat;    
+    background-size: 312px;
+    background-position: 326px -40px;
+    position: relative;
+    margin: 321px 165px 200px 165px;
+}
+
+.illustrationApp{
+    position: absolute;
+    left: 102px;
+    top: -213px;
+    width: 312px;
+}
+
+.premiumPlanCard{
+    position: absolute;
+    right: 95px;
+    top: 90px;
+    background-color: var(--orange);
+    width: 445px;
+    padding: 58px 59px 48px 54px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+.premiumPlanCard h2{
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 700;
+    color: var(--off-white);
+    margin-bottom: 22px;
+}
+
+.premiumPlanCard p, .premiumPlanCard div{
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 400;
+    color: var(--off-white);
+    margin-bottom: 40px;
+}
+
+.premiumPlanCard div span{
+    font-size: 65px;
+    line-height: 52px;
+    font-weight: 700;
+    color: var(--off-white);
+}
+
+.equalizerFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 165px;
+}
+
+.equalizerFooter p{
+    width: 366px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--off-black);
+}
+
+.mailToLink{
+    color: var(--off-black);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mailToLink:hover{ color: var(--orange); }
+
+.socialLinks{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.ffSocialIcon{ cursor: pointer; }
+
+.ffSocialIcon svg:is(:hover) path{
+    fill: var(--orange);
+}
+
+@media screen and (max-width: 1280px){
+    header, .heroSection, .equalizerFooter {
+        padding-left: 65px;
+        padding-right: 65px;
+
+    }
+    .illustrationSection{
+        margin-left: 65px;
+        margin-right: 65px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    header, .heroSection, .equalizerFooter {
+        padding-left: 39px;
+        padding-right: 39px;
+
+    }
+    .illustrationSection{
+        margin-left: 39px;
+        margin-right: 39px;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        background: var(--off-white) url(./assets/bg-main-tablet.png) no-repeat;
+        background-position-x: -254px;
+        background-position-y: -212px;
+    }
+    .heroSection{ padding-top: 95px; }
+    .heroSection div{
+        width: 520px;
+    }
+    .heroSection h1{
+        font-size: 64px;
+        line-height: 64px;
+    }
+    .heroSection p{
+        font-size: 18px;
+        line-height: 28px;
+        padding: 0;
+    }
+    .heroSection img{
+        top: -32px;
+        right: -35px;
+    }
+    .illustrationApp{
+        left: 64px;
+        width: 270px;
+    }
+    .premiumPlanCard{
+        width: 399px;
+        right: 58px;
+        top: 150px;
+        padding: 48px;
+    }
+    .premiumPlanCard h2{ font-size: 32px; line-height: 40px; }
+    .premiumPlanCard p, .premiumPlanCard div{ font-size: 18px; line-height: 28px; }
+    .equalizerFooter{
+        padding-top: 85px;
+    }
+    .equalizerFooter div{
+        gap: 32px !important;
+        flex-direction: column;
+    }
+    .socialLinks{ align-self: flex-end; }
+}
+
+@media screen and (max-width: 600px){
+    body{
+        background: var(--off-white) url(./assets/bg-main-mobile.png) no-repeat;
+        background-position-x: 195px;
+        background-position-y: -195px;      
+    }
+    header{ padding-top: 39px; }
+    header, .heroSection, .equalizerFooter{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .heroSection{ padding-top: 64px; }
+    .heroSection div, .equalizerFooter p{
+        width: 100%;
+    }
+    .heroSection h1 { font-size: 40px; line-height: 48px; }
+    .heroSection p{ font-size: 16px; line-height: 26px; }
+    .heroSection img{ display: none; }
+    .illustrationSection{ 
+        margin: 166px 0 0; 
+        background-size: 280px;
+        background-position: center top;
+    }
+    .illustrationApp {
+        left: 50%;
+        width: 208px;
+        transform: translate(-50%, 98px);
+    }
+    .premiumPlanCard {
+        width: 100%;
+        right: 0;
+        top: 380px;
+        padding: 48px 36px;
+    }
+    .equalizerFooter{
+        margin-top: 286px;
+        gap: 64px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .socialLinks{ align-self: flex-start; }
+}
+
+@media screen and (max-width: 425px){
+    body{
+        background-position-x: 5px;
+    }
+    .equalizerFooter{
+        margin-top: 325px;
+    }
+}
