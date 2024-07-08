@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- displays site properly based on user's device -->
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+		<title>Frontend Mentor | Contact form</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>	
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>		
+		<link rel="stylesheet" href="style.css">				
+	</head>
+
+	<body>
+		<main>
+			<form class="formElement">
+				<h1>Contact Us</h1>
+				<div class="fieldsContainer">
+					<div class="fieldBox">
+						<div class="formField">
+							<label for="fName">First Name <span class="requiredMark">*</span></label>
+							<input id="fName" type="text" value="" class="field" name="fName" />
+							<span class="errorMessage error_fName">This field is required</span>
+						</div>
+						<div class="formField">
+							<label for="lName">Last Name <span class="requiredMark">*</span></label>
+							<input id="lName" type="text" value="" class="field" name="lName" />
+							<span class="errorMessage error_lName">This field is required</span>
+						</div>
+					</div>
+					<div class="formField">
+						<label for="email">Email Address <span class="requiredMark">*</span></label>
+						<input id="email" type="email" value="" class="field" name="email" />
+						<span class="errorMessage error_email">Please enter a valid email address</span>
+					</div>
+					<div class="d-flex flex-column">
+						<span class="formLabel d-inline-block" style="margin-bottom: 16px;">Query Type <span class="requiredMark">*</span></span>
+						<div class="fieldBox">
+							<div class="field radioField">
+								<label for="ge" class="radioFieldLabel">
+									<input id="ge" type="radio" name="radio" value="General Enquiry" />
+									<span class="customRadioField">General Enquiry</span>
+								</label>
+							</div>
+							<div class="field radioField">
+								<label for="sr" class="radioFieldLabel">
+									<input id="sr" type="radio" name="radio" value="Support Request" />
+									<span class="customRadioField">Support Request</span>
+								</label>
+							</div>
+						</div>
+						<span class="errorMessage error_radio">Please select a query type</span>
+					</div>					
+					<div class="formField">
+						<label for="formMessage">Message <span class="requiredMark">*</span></label>
+						<textarea name="message" id="formMessage" class="fieldArea" cols="30" rows="10"></textarea>
+						<span class="errorMessage error_message">This field is required</span>
+					</div>
+					<div class="formField">
+						<div class="checkboxField">
+							<label for="checkbox" class="customCheckboxLabel">
+								<input type="checkbox" id="checkbox" />
+								<span class="customCheckBox">
+									I consent to being contacted by the team <span class="requiredMark">*</span>
+								</span>
+							</label>
+						</div>
+						<span class="errorMessage error_checkbox">
+							To submit this form, please consent to being contacted						
+						</span>
+					</div>
+					<button type="submit" class="submitCta">
+						Submit
+					</button>			
+				</div>			
+			</form>
+			<div class="successToast animate__animated animate__fadeIn">
+				<span>
+					<img src="./assets/images/icon-success-check.svg" alt="" />
+					Message Sent!
+				</span>
+				<span>
+					Thanks for completing the form. We'll be in touch soon!
+				</span>
+			</div>
+		</main>	
+		<div class="attribution animate__animated animate__fadeIn text-center" role="complementary">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+			Developed by 
+			<a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+			aria-label="Developer - Krishna Vishwakarma">				
+				<img src="../../assets/kv-footer.png" style="width: 130px;margin: 6px auto;" alt="Developer - Krishna Vishwakarma" />
+			</a>			
+		</div>	
+		<script src="./index.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{   
+    --green-lighter: #dff1e7;
+    --green-medium: #0c7d69;
+    --red: #d73c3c;
+    --white: #ffffff;
+    --grey-medium: #87a3a6;
+    --grey-darker: #2b4246;
+    /* FONTS */        
+    --ff-karla: "Karla", sans-serif;
+}
+
+/* Modern CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+	list-style: none;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+	line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+	text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+	color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+	min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+	scroll-margin-block: 5ex;
+}
+
+/*  */
+
+.d-none{ display: none; }
+.d-flex{ display: flex; }
+.text-center{ text-align: center; }
+.flex-column{ flex-direction: column; }
+.flex-wrap{ flex-wrap: wrap; }
+.justify-content-between{ justify-content: space-between; }
+.justify-content-center{ justify-content: center; }
+.justify-content-start{ justify-content: flex-start; }
+.justify-content-end{ justify-content: flex-end; }
+.align-items-center{ align-items: center; }
+.align-items-start{ align-items: flex-start; }
+.align-items-end{ align-items: flex-end; }
+
+body{
+    background: var(--green-lighter) ;
+    color: var(--grey-darker);
+    font-family: var(--ff-karla);    
+    position: relative;    
+    transition: all 0.3s linear;
+    overflow-x: hidden;
+    font-optical-sizing: auto;    
+    font-style: normal;
+}
+
+.attribution{    
+    text-align: center;
+    color: var(--grey-darker);
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.attribution a{ color: var(--grey-darker); font-weight: 500; }
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    padding: 40px;
+}
+
+.formElement{
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 736px;
+}
+
+h1{
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--grey-darker);    
+}
+
+.fieldsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.submitCta{
+    background-color: var(--green-medium);
+    color: var(--white);
+    width: auto;
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 700;    
+    border: none;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.submitCta:hover{
+    background-color: #063f36;    
+}
+
+.requiredMark, label, .formLabel{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--green-medium);
+}
+
+label, .formLabel{
+    color: var(--grey-darker);
+}
+
+.formField{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field, .fieldArea{
+    border: 1px solid var(--grey-medium);
+    height: 50px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    outline: none;
+    position: relative;
+}
+
+.field:is(:active, :focus, :hover), .fieldArea:is(:active, :focus, :hover){
+    border-color: var(--green-medium);
+}
+
+.fieldArea{ height: 105px; width: 100%; }
+
+.fieldBox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.radioFieldLabel{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--grey-darker);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.radioFieldLabel input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.customRadioField{ 
+    position: relative; 
+    display: block;
+    padding-left: 34px;
+    cursor: pointer;
+}
+
+.customRadioField::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0px;
+    height: 20px;
+    width: 20px;
+    border: 1.5px solid var(--grey-darker);
+    border-radius: 50%;
+    white-space: nowrap;
+}
+
+.customRadioField::after{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: var(--green-medium);
+    border-radius: 50%;
+    top: 6px;
+    left: 4px;
+    display: none;
+}
+
+.radioField:hover .customRadioField::before{
+    border-color: var(--grey-medium);
+}
+
+.radioFieldLabel input:checked ~ .customRadioField::before,
+.radioField:has(input:active) .customRadioField::before {    
+    border-color: var(--green-medium);
+}
+
+.radioFieldLabel input:checked ~ .customRadioField::after, .radioField:has(input:active) {
+    display: block;
+}
+
+.radioField:has(input:active) .customRadioField::after{
+    display: block;
+}
+
+.radioField:has(input:is(:active, :checked)){
+    background: var(--green-lighter);
+}
+
+.errorField{ border-color: var(--red); }
+.errorMessage{
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--red);
+    display: inline-block;
+    margin-top: 8px;
+    display: none;
+}
+
+.checkboxField{
+    display: flex;
+    align-items: center;
+    margin: 16px 0;
+}
+
+#checkbox{ display: none; }
+
+.customCheckBox{
+    position: relative;
+    cursor: pointer;
+    padding-left: 40px;
+}
+
+.customCheckBox::before{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 1.5px solid var(--grey-medium);
+    border-radius: 2px;
+    top: 1px;
+    left: 0;
+}
+
+.customCheckBox::after{
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: url(./assets/images/icon-checkbox-check.svg) no-repeat;
+    top: 1px;
+    left: 0px;
+    display: none;
+}
+
+.checkbox input:checked ~ .customCheckBox::before,
+.customCheckboxLabel:has(input:is(:active, :checked))  .customCheckBox::before {
+   display: none;
+}
+
+.checkbox input:checked ~ .customCheckBox::after,
+.customCheckboxLabel:has(input:is(:active, :checked))  .customCheckBox::after {
+    display: block;
+}
+
+.successToast{
+    width: 450px;
+    padding: 24px;
+    background: var(--grey-darker);
+    border-radius: 12px;    
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    display: none;
+}
+
+.successToast span:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    line-height: normal;
+    color: var(--white);
+    font-weight: 700;
+}
+
+.successToast span:nth-child(2){
+    font-size: 16px;
+    line-height: normal;
+    color: var(--green-lighter);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 736px){
+    .formElement{
+        width: 580px;
+    }
+    .fieldArea{ height: 132px; }
+}
+
+@media screen and (max-width: 580px){
+    main{
+        padding: 32px 16px;
+    }
+    .formElement{
+        width: 100%;
+        padding: 24px;
+    }
+    .fieldBox{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .fieldArea{ height: 240px; }
+    .successToast{
+        width: 92%;
+        right: unset;
+        transform: translate(0%, -8%);
+    }
+}
