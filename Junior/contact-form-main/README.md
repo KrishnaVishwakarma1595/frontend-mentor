@@ -45,12 +45,14 @@ Users is able to:
 ### Screenshot
 
 ![](./screenshot-desktop.png)
+![](./screenshot-error.png)
+![](./screenshot-filled.png)
 ![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-equalizer-landing-page-solution-1Zjh_CJmgq)
-- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Newbie/equalizer-landing-page/)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-contact-form-solution-FCWxWshwXQ)
+- Live Site URL: [Live URL](https://krishnavishwakarma1595.github.io/frontend-mentor/Junior/contact-form-main/)
 
 ## My process
 
@@ -67,6 +69,7 @@ Users is able to:
 - Writing Semantic HTML5 markup
 - CSS Flexbox & Grids
 - Mobile-first workflow
+- JS Form Validation
 
 ## Author
 
